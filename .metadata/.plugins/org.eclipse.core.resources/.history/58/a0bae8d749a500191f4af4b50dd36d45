@@ -1,0 +1,21 @@
+#include "unity.h"
+#include "timer.h"
+
+
+
+void setUp(void)
+{
+}
+
+void tearDown(void)
+{
+}
+
+void test_timer_clk_int_Freq_expect_true(void)
+{
+    int i = clk_int_Freq();
+
+    TEST_ASSERT_EQUAL(HAL_RCC_GetHCLKFreq,i);
+}
+
+void test_setDeadTime_expect

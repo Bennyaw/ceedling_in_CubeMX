@@ -1,0 +1,6 @@
+#ifndef _TIMER_H
+#define _TIMER_H
+
+#define HAL_RCC_GetHCLKFreq() 8000000;
+
+#endif // _TIMER_H

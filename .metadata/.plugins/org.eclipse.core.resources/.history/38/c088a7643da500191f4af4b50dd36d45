@@ -1,0 +1,17 @@
+#include "unity.h"
+#include "timer.h"
+
+void setUp(void)
+{
+}
+
+void tearDown(void)
+{
+}
+
+void test_timer_NeedToImplement(void)
+{
+    int i = sum(5,10);
+
+    	TEST_ASSERT_EQUAL_INT(15,i);
+}

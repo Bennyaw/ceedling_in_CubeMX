@@ -1,0 +1,14 @@
+AbstractTextEditor.Color.Background=128,128,128
+AbstractTextEditor.Color.FindScope=0,0,160
+AbstractTextEditor.Color.Foreground=0,0,128
+AbstractTextEditor.Color.SelectionBackground=0,0,0
+AbstractTextEditor.Color.SelectionBackground.SystemDefault=false
+AbstractTextEditor.Color.SelectionForeground=255,128,64
+AbstractTextEditor.Color.SelectionForeground.SystemDefault=false
+currentLineColor=0,0,0
+eclipse.preferences.version=1
+hyperlinkColor=0,128,192
+hyperlinkColor.SystemDefault=false
+lineNumberColor=0,0,0
+overviewRuler_migration=migrated_3.1
+printMarginColor=0,128,192

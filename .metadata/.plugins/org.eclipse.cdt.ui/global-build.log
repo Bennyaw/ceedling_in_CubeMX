@@ -1,0 +1,2438 @@
+14:21:16 **** Incremental Build of configuration Debug for project test_ceedling ****
+make all 
+Building target: test_ceedling.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft -specs=nosys.specs -specs=nano.specs -T"../STM32F103C8Tx_FLASH.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "test_ceedling.elf" @"objects.list"   -lm
+startup/startup_stm32f103xb.o: In function `LoopFillZerobss':
+C:\Bennyaw\STM32\test_ceedling\test_ceedling\Debug/../startup/startup_stm32f103xb.s:114: undefined reference to `main'
+collect2.exe: error: ld returned 1 exit status
+makefile:36: recipe for target 'test_ceedling.elf' failed
+make: *** [test_ceedling.elf] Error 1
+14:25:53 **** Clean-only build of configuration Debug for project UART ****
+make clean 
+rm -rf *
+ 
+14:25:54 **** Build of configuration Debug for project UART ****
+make all 
+Building file: ../startup/startup_stm32f429xx.s
+Invoking: MCU GCC Assembler
+C:\Bennyaw\STM32\UART\UART\Debug
+arm-none-eabi-as -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -g -o "startup/startup_stm32f429xx.o" "../startup/startup_stm32f429xx.s"
+Finished building: ../startup/startup_stm32f429xx.s
+ 
+Building file: ../Src/Gpio.c
+Invoking: MCU GCC Compiler
+C:\Bennyaw\STM32\UART\UART\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F429xx -I"C:/Bennyaw/STM32/UART/UART/Inc" -I"C:/Bennyaw/STM32/UART/UART/Drivers/STM32F4xx_HAL_Driver/Inc" -I"C:/Bennyaw/STM32/UART/UART/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy" -I"C:/Bennyaw/STM32/UART/UART/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"C:/Bennyaw/STM32/UART/UART/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Src/Gpio.d" -MT"Src/Gpio.o" -o "Src/Gpio.o" "../Src/Gpio.c"
+Finished building: ../Src/Gpio.c
+ 
+Building file: ../Src/NVIC.c
+Invoking: MCU GCC Compiler
+C:\Bennyaw\STM32\UART\UART\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F429xx -I"C:/Bennyaw/STM32/UART/UART/Inc" -I"C:/Bennyaw/STM32/UART/UART/Drivers/STM32F4xx_HAL_Driver/Inc" -I"C:/Bennyaw/STM32/UART/UART/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy" -I"C:/Bennyaw/STM32/UART/UART/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"C:/Bennyaw/STM32/UART/UART/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Src/NVIC.d" -MT"Src/NVIC.o" -o "Src/NVIC.o" "../Src/NVIC.c"
+Finished building: ../Src/NVIC.c
+ 
+Building file: ../Src/Timer.c
+Invoking: MCU GCC Compiler
+C:\Bennyaw\STM32\UART\UART\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F429xx -I"C:/Bennyaw/STM32/UART/UART/Inc" -I"C:/Bennyaw/STM32/UART/UART/Drivers/STM32F4xx_HAL_Driver/Inc" -I"C:/Bennyaw/STM32/UART/UART/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy" -I"C:/Bennyaw/STM32/UART/UART/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"C:/Bennyaw/STM32/UART/UART/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Src/Timer.d" -MT"Src/Timer.o" -o "Src/Timer.o" "../Src/Timer.c"
+Finished building: ../Src/Timer.c
+ 
+Building file: ../Src/Uart.c
+Invoking: MCU GCC Compiler
+C:\Bennyaw\STM32\UART\UART\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F429xx -I"C:/Bennyaw/STM32/UART/UART/Inc" -I"C:/Bennyaw/STM32/UART/UART/Drivers/STM32F4xx_HAL_Driver/Inc" -I"C:/Bennyaw/STM32/UART/UART/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy" -I"C:/Bennyaw/STM32/UART/UART/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"C:/Bennyaw/STM32/UART/UART/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Src/Uart.d" -MT"Src/Uart.o" -o "Src/Uart.o" "../Src/Uart.c"
+Finished building: ../Src/Uart.c
+ 
+Building file: ../Src/main.c
+Invoking: MCU GCC Compiler
+C:\Bennyaw\STM32\UART\UART\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F429xx -I"C:/Bennyaw/STM32/UART/UART/Inc" -I"C:/Bennyaw/STM32/UART/UART/Drivers/STM32F4xx_HAL_Driver/Inc" -I"C:/Bennyaw/STM32/UART/UART/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy" -I"C:/Bennyaw/STM32/UART/UART/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"C:/Bennyaw/STM32/UART/UART/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Src/main.d" -MT"Src/main.o" -o "Src/main.o" "../Src/main.c"
+Finished building: ../Src/main.c
+ 
+Building file: ../Src/stm32f4xx_hal_msp.c
+Invoking: MCU GCC Compiler
+C:\Bennyaw\STM32\UART\UART\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F429xx -I"C:/Bennyaw/STM32/UART/UART/Inc" -I"C:/Bennyaw/STM32/UART/UART/Drivers/STM32F4xx_HAL_Driver/Inc" -I"C:/Bennyaw/STM32/UART/UART/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy" -I"C:/Bennyaw/STM32/UART/UART/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"C:/Bennyaw/STM32/UART/UART/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Src/stm32f4xx_hal_msp.d" -MT"Src/stm32f4xx_hal_msp.o" -o "Src/stm32f4xx_hal_msp.o" "../Src/stm32f4xx_hal_msp.c"
+Finished building: ../Src/stm32f4xx_hal_msp.c
+ 
+Building file: ../Src/stm32f4xx_it.c
+Invoking: MCU GCC Compiler
+C:\Bennyaw\STM32\UART\UART\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F429xx -I"C:/Bennyaw/STM32/UART/UART/Inc" -I"C:/Bennyaw/STM32/UART/UART/Drivers/STM32F4xx_HAL_Driver/Inc" -I"C:/Bennyaw/STM32/UART/UART/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy" -I"C:/Bennyaw/STM32/UART/UART/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"C:/Bennyaw/STM32/UART/UART/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Src/stm32f4xx_it.d" -MT"Src/stm32f4xx_it.o" -o "Src/stm32f4xx_it.o" "../Src/stm32f4xx_it.c"
+Finished building: ../Src/stm32f4xx_it.c
+ 
+Building file: ../Src/system_stm32f4xx.c
+Invoking: MCU GCC Compiler
+C:\Bennyaw\STM32\UART\UART\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F429xx -I"C:/Bennyaw/STM32/UART/UART/Inc" -I"C:/Bennyaw/STM32/UART/UART/Drivers/STM32F4xx_HAL_Driver/Inc" -I"C:/Bennyaw/STM32/UART/UART/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy" -I"C:/Bennyaw/STM32/UART/UART/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"C:/Bennyaw/STM32/UART/UART/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Src/system_stm32f4xx.d" -MT"Src/system_stm32f4xx.o" -o "Src/system_stm32f4xx.o" "../Src/system_stm32f4xx.c"
+Finished building: ../Src/system_stm32f4xx.c
+ 
+Building file: ../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c
+Invoking: MCU GCC Compiler
+C:\Bennyaw\STM32\UART\UART\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F429xx -I"C:/Bennyaw/STM32/UART/UART/Inc" -I"C:/Bennyaw/STM32/UART/UART/Drivers/STM32F4xx_HAL_Driver/Inc" -I"C:/Bennyaw/STM32/UART/UART/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy" -I"C:/Bennyaw/STM32/UART/UART/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"C:/Bennyaw/STM32/UART/UART/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.o" -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.o" "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c"
+Finished building: ../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c
+ 
+Building file: ../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c
+Invoking: MCU GCC Compiler
+C:\Bennyaw\STM32\UART\UART\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F429xx -I"C:/Bennyaw/STM32/UART/UART/Inc" -I"C:/Bennyaw/STM32/UART/UART/Drivers/STM32F4xx_HAL_Driver/Inc" -I"C:/Bennyaw/STM32/UART/UART/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy" -I"C:/Bennyaw/STM32/UART/UART/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"C:/Bennyaw/STM32/UART/UART/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.o" -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.o" "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c"
+Finished building: ../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c
+ 
+Building file: ../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c
+Invoking: MCU GCC Compiler
+C:\Bennyaw\STM32\UART\UART\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F429xx -I"C:/Bennyaw/STM32/UART/UART/Inc" -I"C:/Bennyaw/STM32/UART/UART/Drivers/STM32F4xx_HAL_Driver/Inc" -I"C:/Bennyaw/STM32/UART/UART/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy" -I"C:/Bennyaw/STM32/UART/UART/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"C:/Bennyaw/STM32/UART/UART/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.o" -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.o" "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c"
+Finished building: ../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c
+ 
+Building file: ../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma_ex.c
+Invoking: MCU GCC Compiler
+C:\Bennyaw\STM32\UART\UART\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F429xx -I"C:/Bennyaw/STM32/UART/UART/Inc" -I"C:/Bennyaw/STM32/UART/UART/Drivers/STM32F4xx_HAL_Driver/Inc" -I"C:/Bennyaw/STM32/UART/UART/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy" -I"C:/Bennyaw/STM32/UART/UART/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"C:/Bennyaw/STM32/UART/UART/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma_ex.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma_ex.o" -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma_ex.o" "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma_ex.c"
+Finished building: ../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma_ex.c
+ 
+Building file: ../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash.c
+Invoking: MCU GCC Compiler
+C:\Bennyaw\STM32\UART\UART\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F429xx -I"C:/Bennyaw/STM32/UART/UART/Inc" -I"C:/Bennyaw/STM32/UART/UART/Drivers/STM32F4xx_HAL_Driver/Inc" -I"C:/Bennyaw/STM32/UART/UART/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy" -I"C:/Bennyaw/STM32/UART/UART/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"C:/Bennyaw/STM32/UART/UART/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash.o" -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash.o" "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash.c"
+Finished building: ../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash.c
+ 
+Building file: ../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ex.c
+Invoking: MCU GCC Compiler
+C:\Bennyaw\STM32\UART\UART\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F429xx -I"C:/Bennyaw/STM32/UART/UART/Inc" -I"C:/Bennyaw/STM32/UART/UART/Drivers/STM32F4xx_HAL_Driver/Inc" -I"C:/Bennyaw/STM32/UART/UART/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy" -I"C:/Bennyaw/STM32/UART/UART/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"C:/Bennyaw/STM32/UART/UART/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ex.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ex.o" -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ex.o" "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ex.c"
+Finished building: ../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ex.c
+ 
+Building file: ../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ramfunc.c
+Invoking: MCU GCC Compiler
+C:\Bennyaw\STM32\UART\UART\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F429xx -I"C:/Bennyaw/STM32/UART/UART/Inc" -I"C:/Bennyaw/STM32/UART/UART/Drivers/STM32F4xx_HAL_Driver/Inc" -I"C:/Bennyaw/STM32/UART/UART/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy" -I"C:/Bennyaw/STM32/UART/UART/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"C:/Bennyaw/STM32/UART/UART/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ramfunc.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ramfunc.o" -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ramfunc.o" "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ramfunc.c"
+Finished building: ../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ramfunc.c
+ 
+Building file: ../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.c
+Invoking: MCU GCC Compiler
+C:\Bennyaw\STM32\UART\UART\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F429xx -I"C:/Bennyaw/STM32/UART/UART/Inc" -I"C:/Bennyaw/STM32/UART/UART/Drivers/STM32F4xx_HAL_Driver/Inc" -I"C:/Bennyaw/STM32/UART/UART/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy" -I"C:/Bennyaw/STM32/UART/UART/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"C:/Bennyaw/STM32/UART/UART/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.o" -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.o" "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.c"
+Finished building: ../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.c
+ 
+Building file: ../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr.c
+Invoking: MCU GCC Compiler
+C:\Bennyaw\STM32\UART\UART\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F429xx -I"C:/Bennyaw/STM32/UART/UART/Inc" -I"C:/Bennyaw/STM32/UART/UART/Drivers/STM32F4xx_HAL_Driver/Inc" -I"C:/Bennyaw/STM32/UART/UART/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy" -I"C:/Bennyaw/STM32/UART/UART/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"C:/Bennyaw/STM32/UART/UART/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr.o" -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr.o" "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr.c"
+Finished building: ../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr.c
+ 
+Building file: ../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr_ex.c
+Invoking: MCU GCC Compiler
+C:\Bennyaw\STM32\UART\UART\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F429xx -I"C:/Bennyaw/STM32/UART/UART/Inc" -I"C:/Bennyaw/STM32/UART/UART/Drivers/STM32F4xx_HAL_Driver/Inc" -I"C:/Bennyaw/STM32/UART/UART/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy" -I"C:/Bennyaw/STM32/UART/UART/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"C:/Bennyaw/STM32/UART/UART/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr_ex.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr_ex.o" -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr_ex.o" "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr_ex.c"
+Finished building: ../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr_ex.c
+ 
+Building file: ../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.c
+Invoking: MCU GCC Compiler
+C:\Bennyaw\STM32\UART\UART\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F429xx -I"C:/Bennyaw/STM32/UART/UART/Inc" -I"C:/Bennyaw/STM32/UART/UART/Drivers/STM32F4xx_HAL_Driver/Inc" -I"C:/Bennyaw/STM32/UART/UART/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy" -I"C:/Bennyaw/STM32/UART/UART/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"C:/Bennyaw/STM32/UART/UART/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.o" -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.o" "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.c"
+Finished building: ../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.c
+ 
+Building file: ../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.c
+Invoking: MCU GCC Compiler
+C:\Bennyaw\STM32\UART\UART\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F429xx -I"C:/Bennyaw/STM32/UART/UART/Inc" -I"C:/Bennyaw/STM32/UART/UART/Drivers/STM32F4xx_HAL_Driver/Inc" -I"C:/Bennyaw/STM32/UART/UART/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy" -I"C:/Bennyaw/STM32/UART/UART/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"C:/Bennyaw/STM32/UART/UART/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.o" -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.o" "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.c"
+Finished building: ../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.c
+ 
+Building file: ../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.c
+Invoking: MCU GCC Compiler
+C:\Bennyaw\STM32\UART\UART\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F429xx -I"C:/Bennyaw/STM32/UART/UART/Inc" -I"C:/Bennyaw/STM32/UART/UART/Drivers/STM32F4xx_HAL_Driver/Inc" -I"C:/Bennyaw/STM32/UART/UART/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy" -I"C:/Bennyaw/STM32/UART/UART/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"C:/Bennyaw/STM32/UART/UART/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.o" -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.o" "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.c"
+Finished building: ../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.c
+ 
+Building file: ../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c
+Invoking: MCU GCC Compiler
+C:\Bennyaw\STM32\UART\UART\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F429xx -I"C:/Bennyaw/STM32/UART/UART/Inc" -I"C:/Bennyaw/STM32/UART/UART/Drivers/STM32F4xx_HAL_Driver/Inc" -I"C:/Bennyaw/STM32/UART/UART/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy" -I"C:/Bennyaw/STM32/UART/UART/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"C:/Bennyaw/STM32/UART/UART/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.o" -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.o" "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c"
+Finished building: ../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c
+ 
+Building file: ../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c
+Invoking: MCU GCC Compiler
+C:\Bennyaw\STM32\UART\UART\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F429xx -I"C:/Bennyaw/STM32/UART/UART/Inc" -I"C:/Bennyaw/STM32/UART/UART/Drivers/STM32F4xx_HAL_Driver/Inc" -I"C:/Bennyaw/STM32/UART/UART/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy" -I"C:/Bennyaw/STM32/UART/UART/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"C:/Bennyaw/STM32/UART/UART/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.o" -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.o" "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c"
+Finished building: ../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c
+ 
+Building target: UART.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -specs=nosys.specs -specs=nano.specs -T"../STM32F429ZITx_FLASH.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "UART.elf" @"objects.list"   -lm
+Finished building target: UART.elf
+ 
+make --no-print-directory post-build
+Generating hex and Printing size information:
+arm-none-eabi-objcopy -O ihex "UART.elf" "UART.hex"
+arm-none-eabi-size "UART.elf"
+   text	   data	    bss	    dec	    hex	filename
+   6652	     20	   1772	   8444	   20fc	UART.elf
+ 
+14:26:17 **** Incremental Build of configuration Debug for project test_ceedling ****
+make all 
+Building file: ../Core/Src/main.c
+Invoking: MCU GCC Compiler
+C:\Bennyaw\STM32\test_ceedling\test_ceedling\Debug
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F103xB -I"C:/Bennyaw/STM32/test_ceedling/test_ceedling/Core/Inc" -I"C:/Bennyaw/STM32/test_ceedling/test_ceedling/src" -I"C:/Bennyaw/STM32/test_ceedling/test_ceedling/Drivers/STM32F1xx_HAL_Driver/Inc" -I"C:/Bennyaw/STM32/test_ceedling/test_ceedling/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy" -I"C:/Bennyaw/STM32/test_ceedling/test_ceedling/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"C:/Bennyaw/STM32/test_ceedling/test_ceedling/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" -o "Core/Src/main.o" "../Core/Src/main.c"
+Finished building: ../Core/Src/main.c
+ 
+Building target: test_ceedling.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft -specs=nosys.specs -specs=nano.specs -T"../STM32F103C8Tx_FLASH.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "test_ceedling.elf" @"objects.list"   -lm
+Finished building target: test_ceedling.elf
+ 
+make --no-print-directory post-build
+Generating hex and Printing size information:
+arm-none-eabi-objcopy -O ihex "test_ceedling.elf" "test_ceedling.hex"
+arm-none-eabi-size "test_ceedling.elf"
+   text	   data	    bss	    dec	    hex	filename
+    648	     16	   1568	   2232	    8b8	test_ceedling.elf
+ 
+14:26:51 **** Incremental Build of configuration Debug for project test_ceedling ****
+make all 
+make: Nothing to be done for 'all'.
+15:11:12 **** Incremental Build of configuration Debug for project UART ****
+make all 
+make: Nothing to be done for 'all'.
+15:11:16 **** Incremental Build of configuration Debug for project test_ceedling ****
+make all 
+Building file: ../src/timer.c
+Invoking: MCU GCC Compiler
+C:\Bennyaw\STM32\test_ceedling\test_ceedling\Debug
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F103xB -I"C:/Bennyaw/STM32/test_ceedling/test_ceedling/Core/Inc" -I"C:/Bennyaw/STM32/test_ceedling/test_ceedling/src" -I"C:/Bennyaw/STM32/test_ceedling/test_ceedling/Drivers/STM32F1xx_HAL_Driver/Inc" -I"C:/Bennyaw/STM32/test_ceedling/test_ceedling/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy" -I"C:/Bennyaw/STM32/test_ceedling/test_ceedling/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"C:/Bennyaw/STM32/test_ceedling/test_ceedling/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"src/timer.d" -MT"src/timer.o" -o "src/timer.o" "../src/timer.c"
+Finished building: ../src/timer.c
+ 
+Building target: test_ceedling.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft -specs=nosys.specs -specs=nano.specs -T"../STM32F103C8Tx_FLASH.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "test_ceedling.elf" @"objects.list"   -lm
+Finished building target: test_ceedling.elf
+ 
+make --no-print-directory post-build
+Generating hex and Printing size information:
+arm-none-eabi-objcopy -O ihex "test_ceedling.elf" "test_ceedling.hex"
+arm-none-eabi-size "test_ceedling.elf"
+   text	   data	    bss	    dec	    hex	filename
+    648	     16	   1568	   2232	    8b8	test_ceedling.elf
+ 
+15:17:49 **** Incremental Build of configuration Debug for project test_ceedling ****
+make all 
+make: Nothing to be done for 'all'.
+15:18:16 **** Incremental Build of configuration Debug for project test_ceedling ****
+make all 
+make: Nothing to be done for 'all'.
+15:18:27 **** Incremental Build of configuration Debug for project test_ceedling ****
+make all 
+make: Nothing to be done for 'all'.
+15:22:13 **** Incremental Build of configuration Debug for project test_ceedling ****
+make all 
+Building file: ../src/timer.c
+Invoking: MCU GCC Compiler
+C:\Bennyaw\STM32\test_ceedling\test_ceedling\Debug
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F103xB -I"C:/Bennyaw/STM32/test_ceedling/test_ceedling/Core/Inc" -I"C:/Bennyaw/STM32/test_ceedling/test_ceedling/src" -I"C:/Bennyaw/STM32/test_ceedling/test_ceedling/Drivers/STM32F1xx_HAL_Driver/Inc" -I"C:/Bennyaw/STM32/test_ceedling/test_ceedling/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy" -I"C:/Bennyaw/STM32/test_ceedling/test_ceedling/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"C:/Bennyaw/STM32/test_ceedling/test_ceedling/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"src/timer.d" -MT"src/timer.o" -o "src/timer.o" "../src/timer.c"
+../src/timer.c:3:8: warning: type defaults to 'int' in declaration of 'HAL_RCC_GetHCLKFreq' [-Wimplicit-int]
+ extern HAL_RCC_GetHCLKFreq();
+        ^~~~~~~~~~~~~~~~~~~
+Finished building: ../src/timer.c
+ 
+Building target: test_ceedling.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft -specs=nosys.specs -specs=nano.specs -T"../STM32F103C8Tx_FLASH.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "test_ceedling.elf" @"objects.list"   -lm
+Finished building target: test_ceedling.elf
+ 
+make --no-print-directory post-build
+Generating hex and Printing size information:
+arm-none-eabi-objcopy -O ihex "test_ceedling.elf" "test_ceedling.hex"
+arm-none-eabi-size "test_ceedling.elf"
+   text	   data	    bss	    dec	    hex	filename
+    648	     16	   1568	   2232	    8b8	test_ceedling.elf
+ 
+15:29:37 **** Incremental Build of configuration Debug for project test_ceedling ****
+make all 
+Building file: ../src/timer.c
+Invoking: MCU GCC Compiler
+C:\Bennyaw\STM32\test_ceedling\test_ceedling\Debug
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F103xB -I"C:/Bennyaw/STM32/test_ceedling/test_ceedling/Core/Inc" -I"C:/Bennyaw/STM32/test_ceedling/test_ceedling/src" -I"C:/Bennyaw/STM32/test_ceedling/test_ceedling/Drivers/STM32F1xx_HAL_Driver/Inc" -I"C:/Bennyaw/STM32/test_ceedling/test_ceedling/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy" -I"C:/Bennyaw/STM32/test_ceedling/test_ceedling/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"C:/Bennyaw/STM32/test_ceedling/test_ceedling/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"src/timer.d" -MT"src/timer.o" -o "src/timer.o" "../src/timer.c"
+Finished building: ../src/timer.c
+ 
+Building target: test_ceedling.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft -specs=nosys.specs -specs=nano.specs -T"../STM32F103C8Tx_FLASH.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "test_ceedling.elf" @"objects.list"   -lm
+Finished building target: test_ceedling.elf
+ 
+make --no-print-directory post-build
+Generating hex and Printing size information:
+arm-none-eabi-objcopy -O ihex "test_ceedling.elf" "test_ceedling.hex"
+arm-none-eabi-size "test_ceedling.elf"
+   text	   data	    bss	    dec	    hex	filename
+    648	     16	   1568	   2232	    8b8	test_ceedling.elf
+ 
+15:30:36 **** Incremental Build of configuration Debug for project test_ceedling ****
+make all 
+Building file: ../src/timer.c
+Invoking: MCU GCC Compiler
+C:\Bennyaw\STM32\test_ceedling\test_ceedling\Debug
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F103xB -I"C:/Bennyaw/STM32/test_ceedling/test_ceedling/Core/Inc" -I"C:/Bennyaw/STM32/test_ceedling/test_ceedling/src" -I"C:/Bennyaw/STM32/test_ceedling/test_ceedling/Drivers/STM32F1xx_HAL_Driver/Inc" -I"C:/Bennyaw/STM32/test_ceedling/test_ceedling/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy" -I"C:/Bennyaw/STM32/test_ceedling/test_ceedling/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"C:/Bennyaw/STM32/test_ceedling/test_ceedling/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"src/timer.d" -MT"src/timer.o" -o "src/timer.o" "../src/timer.c"
+../src/timer.c: In function 'clockFreq':
+../src/timer.c:4:1: error: number of arguments doesn't match prototype
+ int clockFreq(){
+ ^~~
+In file included from ../src/timer.c:1:0:
+../src/timer.h:8:5: error: prototype declaration
+ int clockFreq(int a,int b);
+     ^~~~~~~~~
+make: *** [src/timer.o] Error 1
+src/subdir.mk:18: recipe for target 'src/timer.o' failed
+15:31:07 **** Incremental Build of configuration Debug for project test_ceedling ****
+make all 
+Building file: ../src/timer.c
+Invoking: MCU GCC Compiler
+C:\Bennyaw\STM32\test_ceedling\test_ceedling\Debug
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F103xB -I"C:/Bennyaw/STM32/test_ceedling/test_ceedling/Core/Inc" -I"C:/Bennyaw/STM32/test_ceedling/test_ceedling/src" -I"C:/Bennyaw/STM32/test_ceedling/test_ceedling/Drivers/STM32F1xx_HAL_Driver/Inc" -I"C:/Bennyaw/STM32/test_ceedling/test_ceedling/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy" -I"C:/Bennyaw/STM32/test_ceedling/test_ceedling/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"C:/Bennyaw/STM32/test_ceedling/test_ceedling/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"src/timer.d" -MT"src/timer.o" -o "src/timer.o" "../src/timer.c"
+../src/timer.c: In function 'clockFreq':
+../src/timer.c:4:1: error: number of arguments doesn't match prototype
+ int clockFreq(){
+ ^~~
+In file included from ../src/timer.c:1:0:
+../src/timer.h:8:5: error: prototype declaration
+ int clockFreq(int a,int b);
+     ^~~~~~~~~
+src/subdir.mk:18: recipe for target 'src/timer.o' failed
+make: *** [src/timer.o] Error 1
+15:31:51 **** Incremental Build of configuration Debug for project test_ceedling ****
+make all 
+Building file: ../src/timer.c
+Invoking: MCU GCC Compiler
+C:\Bennyaw\STM32\test_ceedling\test_ceedling\Debug
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F103xB -I"C:/Bennyaw/STM32/test_ceedling/test_ceedling/Core/Inc" -I"C:/Bennyaw/STM32/test_ceedling/test_ceedling/src" -I"C:/Bennyaw/STM32/test_ceedling/test_ceedling/Drivers/STM32F1xx_HAL_Driver/Inc" -I"C:/Bennyaw/STM32/test_ceedling/test_ceedling/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy" -I"C:/Bennyaw/STM32/test_ceedling/test_ceedling/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"C:/Bennyaw/STM32/test_ceedling/test_ceedling/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"src/timer.d" -MT"src/timer.o" -o "src/timer.o" "../src/timer.c"
+../src/timer.c: In function 'clockFreq':
+../src/timer.c:4:1: error: number of arguments doesn't match prototype
+ int clockFreq(){
+ ^~~
+In file included from ../src/timer.c:1:0:
+../src/timer.h:8:5: error: prototype declaration
+ int clockFreq(int a,int b);
+     ^~~~~~~~~
+src/subdir.mk:18: recipe for target 'src/timer.o' failed
+make: *** [src/timer.o] Error 1
+15:33:01 **** Incremental Build of configuration Debug for project test_ceedling ****
+make all 
+Building file: ../src/timer.c
+Invoking: MCU GCC Compiler
+C:\Bennyaw\STM32\test_ceedling\test_ceedling\Debug
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F103xB -I"C:/Bennyaw/STM32/test_ceedling/test_ceedling/Core/Inc" -I"C:/Bennyaw/STM32/test_ceedling/test_ceedling/src" -I"C:/Bennyaw/STM32/test_ceedling/test_ceedling/Drivers/STM32F1xx_HAL_Driver/Inc" -I"C:/Bennyaw/STM32/test_ceedling/test_ceedling/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy" -I"C:/Bennyaw/STM32/test_ceedling/test_ceedling/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"C:/Bennyaw/STM32/test_ceedling/test_ceedling/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"src/timer.d" -MT"src/timer.o" -o "src/timer.o" "../src/timer.c"
+Finished building: ../src/timer.c
+ 
+Building target: test_ceedling.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft -specs=nosys.specs -specs=nano.specs -T"../STM32F103C8Tx_FLASH.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "test_ceedling.elf" @"objects.list"   -lm
+Finished building target: test_ceedling.elf
+ 
+make --no-print-directory post-build
+Generating hex and Printing size information:
+arm-none-eabi-objcopy -O ihex "test_ceedling.elf" "test_ceedling.hex"
+arm-none-eabi-size "test_ceedling.elf"
+   text	   data	    bss	    dec	    hex	filename
+    648	     16	   1568	   2232	    8b8	test_ceedling.elf
+ 
+16:43:39 **** Incremental Build of configuration Debug for project test_ceedling ****
+make all 
+Building file: ../src/timer.c
+Invoking: MCU GCC Compiler
+C:\Bennyaw\STM32\test_ceedling\test_ceedling\Debug
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F103xB -I"C:/Bennyaw/STM32/test_ceedling/test_ceedling/Core/Inc" -I"C:/Bennyaw/STM32/test_ceedling/test_ceedling/src" -I"C:/Bennyaw/STM32/test_ceedling/test_ceedling/Drivers/STM32F1xx_HAL_Driver/Inc" -I"C:/Bennyaw/STM32/test_ceedling/test_ceedling/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy" -I"C:/Bennyaw/STM32/test_ceedling/test_ceedling/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"C:/Bennyaw/STM32/test_ceedling/test_ceedling/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"src/timer.d" -MT"src/timer.o" -o "src/timer.o" "../src/timer.c"
+../src/timer.c:10:47: error: two or more data types in declaration specifiers
+ int getdtgBits7to5(uint32_t deadTime_ns,float int period_clk_base){
+                                               ^~~
+../src/timer.c: In function 'setDeadTime':
+../src/timer.c:35:8: error: two or more data types in declaration specifiers
+  float int period_clk_base = 1/clk_int;
+        ^~~
+../src/timer.c:35:12: warning: unused variable 'period_clk_base' [-Wunused-variable]
+  float int period_clk_base = 1/clk_int;
+            ^~~~~~~~~~~~~~~
+../src/timer.c:38:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+src/subdir.mk:18: recipe for target 'src/timer.o' failed
+make: *** [src/timer.o] Error 1
+16:44:55 **** Incremental Build of configuration Debug for project test_ceedling ****
+make all 
+Building file: ../src/timer.c
+Invoking: MCU GCC Compiler
+C:\Bennyaw\STM32\test_ceedling\test_ceedling\Debug
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F103xB -I"C:/Bennyaw/STM32/test_ceedling/test_ceedling/Core/Inc" -I"C:/Bennyaw/STM32/test_ceedling/test_ceedling/src" -I"C:/Bennyaw/STM32/test_ceedling/test_ceedling/Drivers/STM32F1xx_HAL_Driver/Inc" -I"C:/Bennyaw/STM32/test_ceedling/test_ceedling/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy" -I"C:/Bennyaw/STM32/test_ceedling/test_ceedling/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"C:/Bennyaw/STM32/test_ceedling/test_ceedling/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"src/timer.d" -MT"src/timer.o" -o "src/timer.o" "../src/timer.c"
+../src/timer.c:10:47: error: two or more data types in declaration specifiers
+ int getdtgBits7to5(uint32_t deadTime_ns,float int period_clk_base){
+                                               ^~~
+../src/timer.c: In function 'setDeadTime':
+../src/timer.c:35:8: error: two or more data types in declaration specifiers
+  float int period_clk_base = 1/clk_int;
+        ^~~
+../src/timer.c:35:12: warning: unused variable 'period_clk_base' [-Wunused-variable]
+  float int period_clk_base = 1/clk_int;
+            ^~~~~~~~~~~~~~~
+../src/timer.c:38:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+src/subdir.mk:18: recipe for target 'src/timer.o' failed
+make: *** [src/timer.o] Error 1
+16:46:05 **** Incremental Build of configuration Debug for project test_ceedling ****
+make all 
+Building file: ../src/timer.c
+Invoking: MCU GCC Compiler
+C:\Bennyaw\STM32\test_ceedling\test_ceedling\Debug
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F103xB -I"C:/Bennyaw/STM32/test_ceedling/test_ceedling/Core/Inc" -I"C:/Bennyaw/STM32/test_ceedling/test_ceedling/src" -I"C:/Bennyaw/STM32/test_ceedling/test_ceedling/Drivers/STM32F1xx_HAL_Driver/Inc" -I"C:/Bennyaw/STM32/test_ceedling/test_ceedling/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy" -I"C:/Bennyaw/STM32/test_ceedling/test_ceedling/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"C:/Bennyaw/STM32/test_ceedling/test_ceedling/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"src/timer.d" -MT"src/timer.o" -o "src/timer.o" "../src/timer.c"
+In file included from ../src/timer.c:1:0:
+../src/timer.h:16:20: error: unknown type name 'uint32_t'
+ int getdtgBits7to5(uint32_t deadTime_ns,float int period_clk_base);
+                    ^~~~~~~~
+../src/timer.h:16:47: error: two or more data types in declaration specifiers
+ int getdtgBits7to5(uint32_t deadTime_ns,float int period_clk_base);
+                                               ^~~
+../src/timer.c: In function 'setDeadTime':
+../src/timer.c:36:2: warning: 'return' with no value, in function returning non-void
+  return ;
+  ^~~~~~
+../src/timer.c:33:5: note: declared here
+ int setDeadTime(uint32_t deadTime_ns){
+     ^~~~~~~~~~~
+../src/timer.c:35:6: warning: unused variable 'period_clk_base' [-Wunused-variable]
+  int period_clk_base = 1/clk_int;
+      ^~~~~~~~~~~~~~~
+make: *** [src/timer.o] Error 1
+src/subdir.mk:18: recipe for target 'src/timer.o' failed
+16:46:55 **** Incremental Build of configuration Debug for project test_ceedling ****
+make all 
+Building file: ../src/timer.c
+Invoking: MCU GCC Compiler
+C:\Bennyaw\STM32\test_ceedling\test_ceedling\Debug
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F103xB -I"C:/Bennyaw/STM32/test_ceedling/test_ceedling/Core/Inc" -I"C:/Bennyaw/STM32/test_ceedling/test_ceedling/src" -I"C:/Bennyaw/STM32/test_ceedling/test_ceedling/Drivers/STM32F1xx_HAL_Driver/Inc" -I"C:/Bennyaw/STM32/test_ceedling/test_ceedling/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy" -I"C:/Bennyaw/STM32/test_ceedling/test_ceedling/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"C:/Bennyaw/STM32/test_ceedling/test_ceedling/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"src/timer.d" -MT"src/timer.o" -o "src/timer.o" "../src/timer.c"
+../src/timer.c: In function 'setDeadTime':
+../src/timer.c:36:2: warning: 'return' with no value, in function returning non-void
+  return ;
+  ^~~~~~
+../src/timer.c:33:5: note: declared here
+ int setDeadTime(uint32_t deadTime_ns){
+     ^~~~~~~~~~~
+../src/timer.c:35:6: warning: unused variable 'period_clk_base' [-Wunused-variable]
+  int period_clk_base = 1/clk_int;
+      ^~~~~~~~~~~~~~~
+Finished building: ../src/timer.c
+ 
+Building target: test_ceedling.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft -specs=nosys.specs -specs=nano.specs -T"../STM32F103C8Tx_FLASH.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "test_ceedling.elf" @"objects.list"   -lm
+Finished building target: test_ceedling.elf
+ 
+make --no-print-directory post-build
+Generating hex and Printing size information:
+arm-none-eabi-objcopy -O ihex "test_ceedling.elf" "test_ceedling.hex"
+arm-none-eabi-size "test_ceedling.elf"
+   text	   data	    bss	    dec	    hex	filename
+    648	     16	   1568	   2232	    8b8	test_ceedling.elf
+ 
+16:47:56 **** Incremental Build of configuration Debug for project test_ceedling ****
+make all 
+make: Nothing to be done for 'all'.
+16:48:55 **** Incremental Build of configuration Debug for project test_ceedling ****
+make all 
+make: Nothing to be done for 'all'.
+16:50:04 **** Incremental Build of configuration Debug for project test_ceedling ****
+make all 
+make: Nothing to be done for 'all'.
+16:50:41 **** Incremental Build of configuration Debug for project test_ceedling ****
+make all 
+make: Nothing to be done for 'all'.
+16:55:13 **** Incremental Build of configuration Debug for project test_ceedling ****
+make all 
+make: Nothing to be done for 'all'.
+16:57:46 **** Incremental Build of configuration Debug for project test_ceedling ****
+make all 
+Building file: ../src/timer.c
+Invoking: MCU GCC Compiler
+C:\Bennyaw\STM32\test_ceedling\test_ceedling\Debug
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F103xB -I"C:/Bennyaw/STM32/test_ceedling/test_ceedling/Core/Inc" -I"C:/Bennyaw/STM32/test_ceedling/test_ceedling/src" -I"C:/Bennyaw/STM32/test_ceedling/test_ceedling/Drivers/STM32F1xx_HAL_Driver/Inc" -I"C:/Bennyaw/STM32/test_ceedling/test_ceedling/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy" -I"C:/Bennyaw/STM32/test_ceedling/test_ceedling/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"C:/Bennyaw/STM32/test_ceedling/test_ceedling/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"src/timer.d" -MT"src/timer.o" -o "src/timer.o" "../src/timer.c"
+../src/timer.c: In function 'setDeadTime':
+../src/timer.c:37:2: warning: 'return' with no value, in function returning non-void
+  return ;
+  ^~~~~~
+../src/timer.c:34:5: note: declared here
+ int setDeadTime(uint32_t deadTime_ns){
+     ^~~~~~~~~~~
+../src/timer.c:36:6: warning: unused variable 'period_clk_base' [-Wunused-variable]
+  int period_clk_base = 1/clk_int;
+      ^~~~~~~~~~~~~~~
+Finished building: ../src/timer.c
+ 
+Building target: test_ceedling.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft -specs=nosys.specs -specs=nano.specs -T"../STM32F103C8Tx_FLASH.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "test_ceedling.elf" @"objects.list"   -lm
+Finished building target: test_ceedling.elf
+ 
+make --no-print-directory post-build
+Generating hex and Printing size information:
+arm-none-eabi-objcopy -O ihex "test_ceedling.elf" "test_ceedling.hex"
+arm-none-eabi-size "test_ceedling.elf"
+   text	   data	    bss	    dec	    hex	filename
+    648	     16	   1568	   2232	    8b8	test_ceedling.elf
+ 
+01:49:02 **** Incremental Build of configuration Debug for project test_ceedling ****
+make all 
+Building file: ../src/timer.c
+Invoking: MCU GCC Compiler
+C:\Bennyaw\STM32\test_ceedling\test_ceedling\Debug
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F103xB -I"C:/Bennyaw/STM32/test_ceedling/test_ceedling/Core/Inc" -I"C:/Bennyaw/STM32/test_ceedling/test_ceedling/src" -I"C:/Bennyaw/STM32/test_ceedling/test_ceedling/Drivers/STM32F1xx_HAL_Driver/Inc" -I"C:/Bennyaw/STM32/test_ceedling/test_ceedling/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy" -I"C:/Bennyaw/STM32/test_ceedling/test_ceedling/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"C:/Bennyaw/STM32/test_ceedling/test_ceedling/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"src/timer.d" -MT"src/timer.o" -o "src/timer.o" "../src/timer.c"
+../src/timer.c: In function 'clk_int_peiord':
+../src/timer.c:10:11: warning: format '%u' expects argument of type 'unsigned int', but argument 2 has type 'double' [-Wformat=]
+  printf("%u",test_val);
+          ~^
+          %f
+../src/timer.c: In function 'setDeadTime':
+../src/timer.c:40:2: warning: 'return' with no value, in function returning non-void
+  return ;
+  ^~~~~~
+../src/timer.c:37:5: note: declared here
+ int setDeadTime(uint32_t deadTime_ns){
+     ^~~~~~~~~~~
+../src/timer.c:39:6: warning: unused variable 'period_clk_base' [-Wunused-variable]
+  int period_clk_base = 1/clk_int;
+      ^~~~~~~~~~~~~~~
+Finished building: ../src/timer.c
+ 
+Building target: test_ceedling.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft -specs=nosys.specs -specs=nano.specs -T"../STM32F103C8Tx_FLASH.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "test_ceedling.elf" @"objects.list"   -lm
+Finished building target: test_ceedling.elf
+ 
+make --no-print-directory post-build
+Generating hex and Printing size information:
+arm-none-eabi-objcopy -O ihex "test_ceedling.elf" "test_ceedling.hex"
+arm-none-eabi-size "test_ceedling.elf"
+   text	   data	    bss	    dec	    hex	filename
+    648	     16	   1568	   2232	    8b8	test_ceedling.elf
+ 
+01:57:37 **** Incremental Build of configuration Debug for project test_ceedling ****
+make all 
+Building file: ../src/timer.c
+Invoking: MCU GCC Compiler
+C:\Bennyaw\STM32\test_ceedling\test_ceedling\Debug
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F103xB -I"C:/Bennyaw/STM32/test_ceedling/test_ceedling/Core/Inc" -I"C:/Bennyaw/STM32/test_ceedling/test_ceedling/src" -I"C:/Bennyaw/STM32/test_ceedling/test_ceedling/Drivers/STM32F1xx_HAL_Driver/Inc" -I"C:/Bennyaw/STM32/test_ceedling/test_ceedling/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy" -I"C:/Bennyaw/STM32/test_ceedling/test_ceedling/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"C:/Bennyaw/STM32/test_ceedling/test_ceedling/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"src/timer.d" -MT"src/timer.o" -o "src/timer.o" "../src/timer.c"
+../src/timer.c: In function 'setDeadTime':
+../src/timer.c:40:2: warning: 'return' with no value, in function returning non-void
+  return ;
+  ^~~~~~
+../src/timer.c:37:5: note: declared here
+ int setDeadTime(uint32_t deadTime_ns){
+     ^~~~~~~~~~~
+../src/timer.c:39:6: warning: unused variable 'period_clk_base' [-Wunused-variable]
+  int period_clk_base = 1/clk_int;
+      ^~~~~~~~~~~~~~~
+Finished building: ../src/timer.c
+ 
+Building target: test_ceedling.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft -specs=nosys.specs -specs=nano.specs -T"../STM32F103C8Tx_FLASH.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "test_ceedling.elf" @"objects.list"   -lm
+Finished building target: test_ceedling.elf
+ 
+make --no-print-directory post-build
+Generating hex and Printing size information:
+arm-none-eabi-objcopy -O ihex "test_ceedling.elf" "test_ceedling.hex"
+arm-none-eabi-size "test_ceedling.elf"
+   text	   data	    bss	    dec	    hex	filename
+    648	     16	   1568	   2232	    8b8	test_ceedling.elf
+ 
+01:58:25 **** Incremental Build of configuration Debug for project test_ceedling ****
+make all 
+Building file: ../src/timer.c
+Invoking: MCU GCC Compiler
+C:\Bennyaw\STM32\test_ceedling\test_ceedling\Debug
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F103xB -I"C:/Bennyaw/STM32/test_ceedling/test_ceedling/Core/Inc" -I"C:/Bennyaw/STM32/test_ceedling/test_ceedling/src" -I"C:/Bennyaw/STM32/test_ceedling/test_ceedling/Drivers/STM32F1xx_HAL_Driver/Inc" -I"C:/Bennyaw/STM32/test_ceedling/test_ceedling/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy" -I"C:/Bennyaw/STM32/test_ceedling/test_ceedling/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"C:/Bennyaw/STM32/test_ceedling/test_ceedling/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"src/timer.d" -MT"src/timer.o" -o "src/timer.o" "../src/timer.c"
+../src/timer.c: In function 'setDeadTime':
+../src/timer.c:40:2: warning: 'return' with no value, in function returning non-void
+  return ;
+  ^~~~~~
+../src/timer.c:37:5: note: declared here
+ int setDeadTime(uint32_t deadTime_ns){
+     ^~~~~~~~~~~
+../src/timer.c:39:6: warning: unused variable 'period_clk_base' [-Wunused-variable]
+  int period_clk_base = 1/clk_int;
+      ^~~~~~~~~~~~~~~
+Finished building: ../src/timer.c
+ 
+Building target: test_ceedling.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft -specs=nosys.specs -specs=nano.specs -T"../STM32F103C8Tx_FLASH.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "test_ceedling.elf" @"objects.list"   -lm
+Finished building target: test_ceedling.elf
+ 
+make --no-print-directory post-build
+Generating hex and Printing size information:
+arm-none-eabi-objcopy -O ihex "test_ceedling.elf" "test_ceedling.hex"
+arm-none-eabi-size "test_ceedling.elf"
+   text	   data	    bss	    dec	    hex	filename
+    648	     16	   1568	   2232	    8b8	test_ceedling.elf
+ 
+01:58:47 **** Incremental Build of configuration Debug for project test_ceedling ****
+make all 
+Building file: ../src/timer.c
+Invoking: MCU GCC Compiler
+C:\Bennyaw\STM32\test_ceedling\test_ceedling\Debug
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F103xB -I"C:/Bennyaw/STM32/test_ceedling/test_ceedling/Core/Inc" -I"C:/Bennyaw/STM32/test_ceedling/test_ceedling/src" -I"C:/Bennyaw/STM32/test_ceedling/test_ceedling/Drivers/STM32F1xx_HAL_Driver/Inc" -I"C:/Bennyaw/STM32/test_ceedling/test_ceedling/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy" -I"C:/Bennyaw/STM32/test_ceedling/test_ceedling/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"C:/Bennyaw/STM32/test_ceedling/test_ceedling/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"src/timer.d" -MT"src/timer.o" -o "src/timer.o" "../src/timer.c"
+../src/timer.c: In function 'setDeadTime':
+../src/timer.c:40:2: warning: 'return' with no value, in function returning non-void
+  return ;
+  ^~~~~~
+../src/timer.c:37:5: note: declared here
+ int setDeadTime(uint32_t deadTime_ns){
+     ^~~~~~~~~~~
+../src/timer.c:39:6: warning: unused variable 'period_clk_base' [-Wunused-variable]
+  int period_clk_base = 1/clk_int;
+      ^~~~~~~~~~~~~~~
+Finished building: ../src/timer.c
+ 
+Building target: test_ceedling.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft -specs=nosys.specs -specs=nano.specs -T"../STM32F103C8Tx_FLASH.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "test_ceedling.elf" @"objects.list"   -lm
+Finished building target: test_ceedling.elf
+ 
+make --no-print-directory post-build
+Generating hex and Printing size information:
+arm-none-eabi-objcopy -O ihex "test_ceedling.elf" "test_ceedling.hex"
+arm-none-eabi-size "test_ceedling.elf"
+   text	   data	    bss	    dec	    hex	filename
+    648	     16	   1568	   2232	    8b8	test_ceedling.elf
+ 
+02:00:52 **** Incremental Build of configuration Debug for project test_ceedling ****
+make all 
+Building file: ../src/timer.c
+Invoking: MCU GCC Compiler
+C:\Bennyaw\STM32\test_ceedling\test_ceedling\Debug
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F103xB -I"C:/Bennyaw/STM32/test_ceedling/test_ceedling/Core/Inc" -I"C:/Bennyaw/STM32/test_ceedling/test_ceedling/src" -I"C:/Bennyaw/STM32/test_ceedling/test_ceedling/Drivers/STM32F1xx_HAL_Driver/Inc" -I"C:/Bennyaw/STM32/test_ceedling/test_ceedling/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy" -I"C:/Bennyaw/STM32/test_ceedling/test_ceedling/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"C:/Bennyaw/STM32/test_ceedling/test_ceedling/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"src/timer.d" -MT"src/timer.o" -o "src/timer.o" "../src/timer.c"
+../src/timer.c: In function 'setDeadTime':
+../src/timer.c:40:2: warning: 'return' with no value, in function returning non-void
+  return ;
+  ^~~~~~
+../src/timer.c:37:5: note: declared here
+ int setDeadTime(uint32_t deadTime_ns){
+     ^~~~~~~~~~~
+../src/timer.c:39:6: warning: unused variable 'period_clk_base' [-Wunused-variable]
+  int period_clk_base = 1/clk_int;
+      ^~~~~~~~~~~~~~~
+Finished building: ../src/timer.c
+ 
+Building target: test_ceedling.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft -specs=nosys.specs -specs=nano.specs -T"../STM32F103C8Tx_FLASH.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "test_ceedling.elf" @"objects.list"   -lm
+Finished building target: test_ceedling.elf
+ 
+make --no-print-directory post-build
+Generating hex and Printing size information:
+arm-none-eabi-objcopy -O ihex "test_ceedling.elf" "test_ceedling.hex"
+arm-none-eabi-size "test_ceedling.elf"
+   text	   data	    bss	    dec	    hex	filename
+    648	     16	   1568	   2232	    8b8	test_ceedling.elf
+ 
+02:01:50 **** Incremental Build of configuration Debug for project test_ceedling ****
+make all 
+Building file: ../src/timer.c
+Invoking: MCU GCC Compiler
+C:\Bennyaw\STM32\test_ceedling\test_ceedling\Debug
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F103xB -I"C:/Bennyaw/STM32/test_ceedling/test_ceedling/Core/Inc" -I"C:/Bennyaw/STM32/test_ceedling/test_ceedling/src" -I"C:/Bennyaw/STM32/test_ceedling/test_ceedling/Drivers/STM32F1xx_HAL_Driver/Inc" -I"C:/Bennyaw/STM32/test_ceedling/test_ceedling/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy" -I"C:/Bennyaw/STM32/test_ceedling/test_ceedling/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"C:/Bennyaw/STM32/test_ceedling/test_ceedling/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"src/timer.d" -MT"src/timer.o" -o "src/timer.o" "../src/timer.c"
+../src/timer.c: In function 'setDeadTime':
+../src/timer.c:40:2: warning: 'return' with no value, in function returning non-void
+  return ;
+  ^~~~~~
+../src/timer.c:37:5: note: declared here
+ int setDeadTime(uint32_t deadTime_ns){
+     ^~~~~~~~~~~
+../src/timer.c:39:6: warning: unused variable 'period_clk_base' [-Wunused-variable]
+  int period_clk_base = 1/clk_int;
+      ^~~~~~~~~~~~~~~
+Finished building: ../src/timer.c
+ 
+Building target: test_ceedling.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft -specs=nosys.specs -specs=nano.specs -T"../STM32F103C8Tx_FLASH.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "test_ceedling.elf" @"objects.list"   -lm
+Finished building target: test_ceedling.elf
+ 
+make --no-print-directory post-build
+Generating hex and Printing size information:
+arm-none-eabi-objcopy -O ihex "test_ceedling.elf" "test_ceedling.hex"
+arm-none-eabi-size "test_ceedling.elf"
+   text	   data	    bss	    dec	    hex	filename
+    648	     16	   1568	   2232	    8b8	test_ceedling.elf
+ 
+02:02:29 **** Incremental Build of configuration Debug for project test_ceedling ****
+make all 
+Building file: ../src/timer.c
+Invoking: MCU GCC Compiler
+C:\Bennyaw\STM32\test_ceedling\test_ceedling\Debug
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F103xB -I"C:/Bennyaw/STM32/test_ceedling/test_ceedling/Core/Inc" -I"C:/Bennyaw/STM32/test_ceedling/test_ceedling/src" -I"C:/Bennyaw/STM32/test_ceedling/test_ceedling/Drivers/STM32F1xx_HAL_Driver/Inc" -I"C:/Bennyaw/STM32/test_ceedling/test_ceedling/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy" -I"C:/Bennyaw/STM32/test_ceedling/test_ceedling/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"C:/Bennyaw/STM32/test_ceedling/test_ceedling/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"src/timer.d" -MT"src/timer.o" -o "src/timer.o" "../src/timer.c"
+../src/timer.c: In function 'clk_int_peiord':
+../src/timer.c:8:46: error: invalid operands to binary / (have 'float *' and 'double')
+  int period = (float*)(1/HAL_RCC_GetHCLKFreq)/pow(10,-9);
+                                              ^~~~~~~~~~~
+../src/timer.c: In function 'setDeadTime':
+../src/timer.c:40:2: warning: 'return' with no value, in function returning non-void
+  return ;
+  ^~~~~~
+../src/timer.c:37:5: note: declared here
+ int setDeadTime(uint32_t deadTime_ns){
+     ^~~~~~~~~~~
+../src/timer.c:39:6: warning: unused variable 'period_clk_base' [-Wunused-variable]
+  int period_clk_base = 1/clk_int;
+      ^~~~~~~~~~~~~~~
+make: *** [src/timer.o] Error 1
+src/subdir.mk:18: recipe for target 'src/timer.o' failed
+02:03:06 **** Incremental Build of configuration Debug for project test_ceedling ****
+make all 
+Building file: ../src/timer.c
+Invoking: MCU GCC Compiler
+C:\Bennyaw\STM32\test_ceedling\test_ceedling\Debug
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F103xB -I"C:/Bennyaw/STM32/test_ceedling/test_ceedling/Core/Inc" -I"C:/Bennyaw/STM32/test_ceedling/test_ceedling/src" -I"C:/Bennyaw/STM32/test_ceedling/test_ceedling/Drivers/STM32F1xx_HAL_Driver/Inc" -I"C:/Bennyaw/STM32/test_ceedling/test_ceedling/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy" -I"C:/Bennyaw/STM32/test_ceedling/test_ceedling/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"C:/Bennyaw/STM32/test_ceedling/test_ceedling/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"src/timer.d" -MT"src/timer.o" -o "src/timer.o" "../src/timer.c"
+../src/timer.c: In function 'setDeadTime':
+../src/timer.c:40:2: warning: 'return' with no value, in function returning non-void
+  return ;
+  ^~~~~~
+../src/timer.c:37:5: note: declared here
+ int setDeadTime(uint32_t deadTime_ns){
+     ^~~~~~~~~~~
+../src/timer.c:39:6: warning: unused variable 'period_clk_base' [-Wunused-variable]
+  int period_clk_base = 1/clk_int;
+      ^~~~~~~~~~~~~~~
+Finished building: ../src/timer.c
+ 
+Building target: test_ceedling.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft -specs=nosys.specs -specs=nano.specs -T"../STM32F103C8Tx_FLASH.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "test_ceedling.elf" @"objects.list"   -lm
+Finished building target: test_ceedling.elf
+ 
+make --no-print-directory post-build
+Generating hex and Printing size information:
+arm-none-eabi-objcopy -O ihex "test_ceedling.elf" "test_ceedling.hex"
+arm-none-eabi-size "test_ceedling.elf"
+   text	   data	    bss	    dec	    hex	filename
+    648	     16	   1568	   2232	    8b8	test_ceedling.elf
+ 
+02:05:05 **** Incremental Build of configuration Debug for project test_ceedling ****
+make all 
+Building file: ../src/timer.c
+Invoking: MCU GCC Compiler
+C:\Bennyaw\STM32\test_ceedling\test_ceedling\Debug
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F103xB -I"C:/Bennyaw/STM32/test_ceedling/test_ceedling/Core/Inc" -I"C:/Bennyaw/STM32/test_ceedling/test_ceedling/src" -I"C:/Bennyaw/STM32/test_ceedling/test_ceedling/Drivers/STM32F1xx_HAL_Driver/Inc" -I"C:/Bennyaw/STM32/test_ceedling/test_ceedling/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy" -I"C:/Bennyaw/STM32/test_ceedling/test_ceedling/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"C:/Bennyaw/STM32/test_ceedling/test_ceedling/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"src/timer.d" -MT"src/timer.o" -o "src/timer.o" "../src/timer.c"
+../src/timer.c: In function 'setDeadTime':
+../src/timer.c:40:2: warning: 'return' with no value, in function returning non-void
+  return ;
+  ^~~~~~
+../src/timer.c:37:5: note: declared here
+ int setDeadTime(uint32_t deadTime_ns){
+     ^~~~~~~~~~~
+../src/timer.c:39:6: warning: unused variable 'period_clk_base' [-Wunused-variable]
+  int period_clk_base = 1/clk_int;
+      ^~~~~~~~~~~~~~~
+Finished building: ../src/timer.c
+ 
+Building target: test_ceedling.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft -specs=nosys.specs -specs=nano.specs -T"../STM32F103C8Tx_FLASH.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "test_ceedling.elf" @"objects.list"   -lm
+Finished building target: test_ceedling.elf
+ 
+make --no-print-directory post-build
+Generating hex and Printing size information:
+arm-none-eabi-objcopy -O ihex "test_ceedling.elf" "test_ceedling.hex"
+arm-none-eabi-size "test_ceedling.elf"
+   text	   data	    bss	    dec	    hex	filename
+    648	     16	   1568	   2232	    8b8	test_ceedling.elf
+ 
+02:05:56 **** Incremental Build of configuration Debug for project test_ceedling ****
+make all 
+Building file: ../src/timer.c
+Invoking: MCU GCC Compiler
+C:\Bennyaw\STM32\test_ceedling\test_ceedling\Debug
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F103xB -I"C:/Bennyaw/STM32/test_ceedling/test_ceedling/Core/Inc" -I"C:/Bennyaw/STM32/test_ceedling/test_ceedling/src" -I"C:/Bennyaw/STM32/test_ceedling/test_ceedling/Drivers/STM32F1xx_HAL_Driver/Inc" -I"C:/Bennyaw/STM32/test_ceedling/test_ceedling/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy" -I"C:/Bennyaw/STM32/test_ceedling/test_ceedling/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"C:/Bennyaw/STM32/test_ceedling/test_ceedling/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"src/timer.d" -MT"src/timer.o" -o "src/timer.o" "../src/timer.c"
+../src/timer.c: In function 'setDeadTime':
+../src/timer.c:40:2: warning: 'return' with no value, in function returning non-void
+  return ;
+  ^~~~~~
+../src/timer.c:37:5: note: declared here
+ int setDeadTime(uint32_t deadTime_ns){
+     ^~~~~~~~~~~
+../src/timer.c:39:6: warning: unused variable 'period_clk_base' [-Wunused-variable]
+  int period_clk_base = 1/clk_int;
+      ^~~~~~~~~~~~~~~
+Finished building: ../src/timer.c
+ 
+Building target: test_ceedling.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft -specs=nosys.specs -specs=nano.specs -T"../STM32F103C8Tx_FLASH.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "test_ceedling.elf" @"objects.list"   -lm
+Finished building target: test_ceedling.elf
+ 
+make --no-print-directory post-build
+Generating hex and Printing size information:
+arm-none-eabi-objcopy -O ihex "test_ceedling.elf" "test_ceedling.hex"
+arm-none-eabi-size "test_ceedling.elf"
+   text	   data	    bss	    dec	    hex	filename
+    648	     16	   1568	   2232	    8b8	test_ceedling.elf
+ 
+02:07:12 **** Incremental Build of configuration Debug for project test_ceedling ****
+make all 
+Building file: ../src/timer.c
+Invoking: MCU GCC Compiler
+C:\Bennyaw\STM32\test_ceedling\test_ceedling\Debug
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F103xB -I"C:/Bennyaw/STM32/test_ceedling/test_ceedling/Core/Inc" -I"C:/Bennyaw/STM32/test_ceedling/test_ceedling/src" -I"C:/Bennyaw/STM32/test_ceedling/test_ceedling/Drivers/STM32F1xx_HAL_Driver/Inc" -I"C:/Bennyaw/STM32/test_ceedling/test_ceedling/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy" -I"C:/Bennyaw/STM32/test_ceedling/test_ceedling/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"C:/Bennyaw/STM32/test_ceedling/test_ceedling/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"src/timer.d" -MT"src/timer.o" -o "src/timer.o" "../src/timer.c"
+../src/timer.c: In function 'setDeadTime':
+../src/timer.c:40:2: warning: 'return' with no value, in function returning non-void
+  return ;
+  ^~~~~~
+../src/timer.c:37:5: note: declared here
+ int setDeadTime(uint32_t deadTime_ns){
+     ^~~~~~~~~~~
+../src/timer.c:39:6: warning: unused variable 'period_clk_base' [-Wunused-variable]
+  int period_clk_base = 1/clk_int;
+      ^~~~~~~~~~~~~~~
+Finished building: ../src/timer.c
+ 
+Building target: test_ceedling.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft -specs=nosys.specs -specs=nano.specs -T"../STM32F103C8Tx_FLASH.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "test_ceedling.elf" @"objects.list"   -lm
+Finished building target: test_ceedling.elf
+ 
+make --no-print-directory post-build
+Generating hex and Printing size information:
+arm-none-eabi-objcopy -O ihex "test_ceedling.elf" "test_ceedling.hex"
+arm-none-eabi-size "test_ceedling.elf"
+   text	   data	    bss	    dec	    hex	filename
+    648	     16	   1568	   2232	    8b8	test_ceedling.elf
+ 
+02:09:31 **** Incremental Build of configuration Debug for project test_ceedling ****
+make all 
+Building file: ../src/timer.c
+Invoking: MCU GCC Compiler
+C:\Bennyaw\STM32\test_ceedling\test_ceedling\Debug
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F103xB -I"C:/Bennyaw/STM32/test_ceedling/test_ceedling/Core/Inc" -I"C:/Bennyaw/STM32/test_ceedling/test_ceedling/src" -I"C:/Bennyaw/STM32/test_ceedling/test_ceedling/Drivers/STM32F1xx_HAL_Driver/Inc" -I"C:/Bennyaw/STM32/test_ceedling/test_ceedling/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy" -I"C:/Bennyaw/STM32/test_ceedling/test_ceedling/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"C:/Bennyaw/STM32/test_ceedling/test_ceedling/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"src/timer.d" -MT"src/timer.o" -o "src/timer.o" "../src/timer.c"
+../src/timer.c: In function 'setDeadTime':
+../src/timer.c:40:2: warning: 'return' with no value, in function returning non-void
+  return ;
+  ^~~~~~
+../src/timer.c:37:5: note: declared here
+ int setDeadTime(uint32_t deadTime_ns){
+     ^~~~~~~~~~~
+../src/timer.c:39:6: warning: unused variable 'period_clk_base' [-Wunused-variable]
+  int period_clk_base = 1/clk_int;
+      ^~~~~~~~~~~~~~~
+Finished building: ../src/timer.c
+ 
+Building target: test_ceedling.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft -specs=nosys.specs -specs=nano.specs -T"../STM32F103C8Tx_FLASH.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "test_ceedling.elf" @"objects.list"   -lm
+Finished building target: test_ceedling.elf
+ 
+make --no-print-directory post-build
+Generating hex and Printing size information:
+arm-none-eabi-objcopy -O ihex "test_ceedling.elf" "test_ceedling.hex"
+arm-none-eabi-size "test_ceedling.elf"
+   text	   data	    bss	    dec	    hex	filename
+    648	     16	   1568	   2232	    8b8	test_ceedling.elf
+ 
+02:10:45 **** Incremental Build of configuration Debug for project test_ceedling ****
+make all 
+Building file: ../src/timer.c
+Invoking: MCU GCC Compiler
+C:\Bennyaw\STM32\test_ceedling\test_ceedling\Debug
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F103xB -I"C:/Bennyaw/STM32/test_ceedling/test_ceedling/Core/Inc" -I"C:/Bennyaw/STM32/test_ceedling/test_ceedling/src" -I"C:/Bennyaw/STM32/test_ceedling/test_ceedling/Drivers/STM32F1xx_HAL_Driver/Inc" -I"C:/Bennyaw/STM32/test_ceedling/test_ceedling/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy" -I"C:/Bennyaw/STM32/test_ceedling/test_ceedling/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"C:/Bennyaw/STM32/test_ceedling/test_ceedling/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"src/timer.d" -MT"src/timer.o" -o "src/timer.o" "../src/timer.c"
+../src/timer.c: In function 'setDeadTime':
+../src/timer.c:40:2: warning: 'return' with no value, in function returning non-void
+  return ;
+  ^~~~~~
+../src/timer.c:37:5: note: declared here
+ int setDeadTime(uint32_t deadTime_ns){
+     ^~~~~~~~~~~
+../src/timer.c:39:6: warning: unused variable 'period_clk_base' [-Wunused-variable]
+  int period_clk_base = 1/clk_int;
+      ^~~~~~~~~~~~~~~
+Finished building: ../src/timer.c
+ 
+Building target: test_ceedling.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft -specs=nosys.specs -specs=nano.specs -T"../STM32F103C8Tx_FLASH.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "test_ceedling.elf" @"objects.list"   -lm
+Finished building target: test_ceedling.elf
+ 
+make --no-print-directory post-build
+Generating hex and Printing size information:
+arm-none-eabi-objcopy -O ihex "test_ceedling.elf" "test_ceedling.hex"
+arm-none-eabi-size "test_ceedling.elf"
+   text	   data	    bss	    dec	    hex	filename
+    648	     16	   1568	   2232	    8b8	test_ceedling.elf
+ 
+02:13:29 **** Incremental Build of configuration Debug for project test_ceedling ****
+make all 
+Building file: ../src/timer.c
+Invoking: MCU GCC Compiler
+C:\Bennyaw\STM32\test_ceedling\test_ceedling\Debug
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F103xB -I"C:/Bennyaw/STM32/test_ceedling/test_ceedling/Core/Inc" -I"C:/Bennyaw/STM32/test_ceedling/test_ceedling/src" -I"C:/Bennyaw/STM32/test_ceedling/test_ceedling/Drivers/STM32F1xx_HAL_Driver/Inc" -I"C:/Bennyaw/STM32/test_ceedling/test_ceedling/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy" -I"C:/Bennyaw/STM32/test_ceedling/test_ceedling/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"C:/Bennyaw/STM32/test_ceedling/test_ceedling/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"src/timer.d" -MT"src/timer.o" -o "src/timer.o" "../src/timer.c"
+../src/timer.c: In function 'clk_int_peiord':
+../src/timer.c:10:26: warning: format '%d' expects argument of type 'int', but argument 3 has type 'double' [-Wformat=]
+  printf("%.9f, period = %d",test_val,period);
+                         ~^
+                         %f
+../src/timer.c: In function 'setDeadTime':
+../src/timer.c:40:2: warning: 'return' with no value, in function returning non-void
+  return ;
+  ^~~~~~
+../src/timer.c:37:5: note: declared here
+ int setDeadTime(uint32_t deadTime_ns){
+     ^~~~~~~~~~~
+../src/timer.c:39:6: warning: unused variable 'period_clk_base' [-Wunused-variable]
+  int period_clk_base = 1/clk_int;
+      ^~~~~~~~~~~~~~~
+Finished building: ../src/timer.c
+ 
+Building target: test_ceedling.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft -specs=nosys.specs -specs=nano.specs -T"../STM32F103C8Tx_FLASH.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "test_ceedling.elf" @"objects.list"   -lm
+Finished building target: test_ceedling.elf
+ 
+make --no-print-directory post-build
+Generating hex and Printing size information:
+arm-none-eabi-objcopy -O ihex "test_ceedling.elf" "test_ceedling.hex"
+arm-none-eabi-size "test_ceedling.elf"
+   text	   data	    bss	    dec	    hex	filename
+    648	     16	   1568	   2232	    8b8	test_ceedling.elf
+ 
+02:15:21 **** Incremental Build of configuration Debug for project test_ceedling ****
+make all 
+Building file: ../src/timer.c
+Invoking: MCU GCC Compiler
+C:\Bennyaw\STM32\test_ceedling\test_ceedling\Debug
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F103xB -I"C:/Bennyaw/STM32/test_ceedling/test_ceedling/Core/Inc" -I"C:/Bennyaw/STM32/test_ceedling/test_ceedling/src" -I"C:/Bennyaw/STM32/test_ceedling/test_ceedling/Drivers/STM32F1xx_HAL_Driver/Inc" -I"C:/Bennyaw/STM32/test_ceedling/test_ceedling/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy" -I"C:/Bennyaw/STM32/test_ceedling/test_ceedling/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"C:/Bennyaw/STM32/test_ceedling/test_ceedling/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"src/timer.d" -MT"src/timer.o" -o "src/timer.o" "../src/timer.c"
+../src/timer.c: In function 'setDeadTime':
+../src/timer.c:40:2: warning: 'return' with no value, in function returning non-void
+  return ;
+  ^~~~~~
+../src/timer.c:37:5: note: declared here
+ int setDeadTime(uint32_t deadTime_ns){
+     ^~~~~~~~~~~
+../src/timer.c:39:6: warning: unused variable 'period_clk_base' [-Wunused-variable]
+  int period_clk_base = 1/clk_int;
+      ^~~~~~~~~~~~~~~
+Finished building: ../src/timer.c
+ 
+Building target: test_ceedling.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft -specs=nosys.specs -specs=nano.specs -T"../STM32F103C8Tx_FLASH.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "test_ceedling.elf" @"objects.list"   -lm
+Finished building target: test_ceedling.elf
+ 
+make --no-print-directory post-build
+Generating hex and Printing size information:
+arm-none-eabi-objcopy -O ihex "test_ceedling.elf" "test_ceedling.hex"
+arm-none-eabi-size "test_ceedling.elf"
+   text	   data	    bss	    dec	    hex	filename
+    648	     16	   1568	   2232	    8b8	test_ceedling.elf
+ 
+02:16:04 **** Incremental Build of configuration Debug for project test_ceedling ****
+make all 
+Building file: ../src/timer.c
+Invoking: MCU GCC Compiler
+C:\Bennyaw\STM32\test_ceedling\test_ceedling\Debug
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F103xB -I"C:/Bennyaw/STM32/test_ceedling/test_ceedling/Core/Inc" -I"C:/Bennyaw/STM32/test_ceedling/test_ceedling/src" -I"C:/Bennyaw/STM32/test_ceedling/test_ceedling/Drivers/STM32F1xx_HAL_Driver/Inc" -I"C:/Bennyaw/STM32/test_ceedling/test_ceedling/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy" -I"C:/Bennyaw/STM32/test_ceedling/test_ceedling/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"C:/Bennyaw/STM32/test_ceedling/test_ceedling/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"src/timer.d" -MT"src/timer.o" -o "src/timer.o" "../src/timer.c"
+../src/timer.c: In function 'setDeadTime':
+../src/timer.c:40:2: warning: 'return' with no value, in function returning non-void
+  return ;
+  ^~~~~~
+../src/timer.c:37:5: note: declared here
+ int setDeadTime(uint32_t deadTime_ns){
+     ^~~~~~~~~~~
+../src/timer.c:39:6: warning: unused variable 'period_clk_base' [-Wunused-variable]
+  int period_clk_base = 1/clk_int;
+      ^~~~~~~~~~~~~~~
+Finished building: ../src/timer.c
+ 
+Building target: test_ceedling.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft -specs=nosys.specs -specs=nano.specs -T"../STM32F103C8Tx_FLASH.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "test_ceedling.elf" @"objects.list"   -lm
+Finished building target: test_ceedling.elf
+ 
+make --no-print-directory post-build
+Generating hex and Printing size information:
+arm-none-eabi-objcopy -O ihex "test_ceedling.elf" "test_ceedling.hex"
+arm-none-eabi-size "test_ceedling.elf"
+   text	   data	    bss	    dec	    hex	filename
+    648	     16	   1568	   2232	    8b8	test_ceedling.elf
+ 
+02:16:54 **** Incremental Build of configuration Debug for project test_ceedling ****
+make all 
+Building file: ../src/timer.c
+Invoking: MCU GCC Compiler
+C:\Bennyaw\STM32\test_ceedling\test_ceedling\Debug
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F103xB -I"C:/Bennyaw/STM32/test_ceedling/test_ceedling/Core/Inc" -I"C:/Bennyaw/STM32/test_ceedling/test_ceedling/src" -I"C:/Bennyaw/STM32/test_ceedling/test_ceedling/Drivers/STM32F1xx_HAL_Driver/Inc" -I"C:/Bennyaw/STM32/test_ceedling/test_ceedling/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy" -I"C:/Bennyaw/STM32/test_ceedling/test_ceedling/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"C:/Bennyaw/STM32/test_ceedling/test_ceedling/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"src/timer.d" -MT"src/timer.o" -o "src/timer.o" "../src/timer.c"
+../src/timer.c: In function 'setDeadTime':
+../src/timer.c:40:2: warning: 'return' with no value, in function returning non-void
+  return ;
+  ^~~~~~
+../src/timer.c:37:5: note: declared here
+ int setDeadTime(uint32_t deadTime_ns){
+     ^~~~~~~~~~~
+../src/timer.c:39:6: warning: unused variable 'period_clk_base' [-Wunused-variable]
+  int period_clk_base = 1/clk_int;
+      ^~~~~~~~~~~~~~~
+Finished building: ../src/timer.c
+ 
+Building target: test_ceedling.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft -specs=nosys.specs -specs=nano.specs -T"../STM32F103C8Tx_FLASH.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "test_ceedling.elf" @"objects.list"   -lm
+Finished building target: test_ceedling.elf
+ 
+make --no-print-directory post-build
+Generating hex and Printing size information:
+arm-none-eabi-objcopy -O ihex "test_ceedling.elf" "test_ceedling.hex"
+arm-none-eabi-size "test_ceedling.elf"
+   text	   data	    bss	    dec	    hex	filename
+    648	     16	   1568	   2232	    8b8	test_ceedling.elf
+ 
+02:17:15 **** Incremental Build of configuration Debug for project test_ceedling ****
+make all 
+Building file: ../src/timer.c
+Invoking: MCU GCC Compiler
+C:\Bennyaw\STM32\test_ceedling\test_ceedling\Debug
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F103xB -I"C:/Bennyaw/STM32/test_ceedling/test_ceedling/Core/Inc" -I"C:/Bennyaw/STM32/test_ceedling/test_ceedling/src" -I"C:/Bennyaw/STM32/test_ceedling/test_ceedling/Drivers/STM32F1xx_HAL_Driver/Inc" -I"C:/Bennyaw/STM32/test_ceedling/test_ceedling/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy" -I"C:/Bennyaw/STM32/test_ceedling/test_ceedling/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"C:/Bennyaw/STM32/test_ceedling/test_ceedling/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"src/timer.d" -MT"src/timer.o" -o "src/timer.o" "../src/timer.c"
+../src/timer.c: In function 'setDeadTime':
+../src/timer.c:40:2: warning: 'return' with no value, in function returning non-void
+  return ;
+  ^~~~~~
+../src/timer.c:37:5: note: declared here
+ int setDeadTime(uint32_t deadTime_ns){
+     ^~~~~~~~~~~
+../src/timer.c:39:6: warning: unused variable 'period_clk_base' [-Wunused-variable]
+  int period_clk_base = 1/clk_int;
+      ^~~~~~~~~~~~~~~
+Finished building: ../src/timer.c
+ 
+Building target: test_ceedling.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft -specs=nosys.specs -specs=nano.specs -T"../STM32F103C8Tx_FLASH.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "test_ceedling.elf" @"objects.list"   -lm
+Finished building target: test_ceedling.elf
+ 
+make --no-print-directory post-build
+Generating hex and Printing size information:
+arm-none-eabi-objcopy -O ihex "test_ceedling.elf" "test_ceedling.hex"
+arm-none-eabi-size "test_ceedling.elf"
+   text	   data	    bss	    dec	    hex	filename
+    648	     16	   1568	   2232	    8b8	test_ceedling.elf
+ 
+02:19:04 **** Incremental Build of configuration Debug for project test_ceedling ****
+make all 
+Building file: ../src/timer.c
+Invoking: MCU GCC Compiler
+C:\Bennyaw\STM32\test_ceedling\test_ceedling\Debug
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F103xB -I"C:/Bennyaw/STM32/test_ceedling/test_ceedling/Core/Inc" -I"C:/Bennyaw/STM32/test_ceedling/test_ceedling/src" -I"C:/Bennyaw/STM32/test_ceedling/test_ceedling/Drivers/STM32F1xx_HAL_Driver/Inc" -I"C:/Bennyaw/STM32/test_ceedling/test_ceedling/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy" -I"C:/Bennyaw/STM32/test_ceedling/test_ceedling/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"C:/Bennyaw/STM32/test_ceedling/test_ceedling/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"src/timer.d" -MT"src/timer.o" -o "src/timer.o" "../src/timer.c"
+../src/timer.c: In function 'setDeadTime':
+../src/timer.c:40:2: warning: 'return' with no value, in function returning non-void
+  return ;
+  ^~~~~~
+../src/timer.c:37:5: note: declared here
+ int setDeadTime(uint32_t deadTime_ns){
+     ^~~~~~~~~~~
+../src/timer.c:39:6: warning: unused variable 'period_clk_base' [-Wunused-variable]
+  int period_clk_base = 1/clk_int;
+      ^~~~~~~~~~~~~~~
+Finished building: ../src/timer.c
+ 
+Building target: test_ceedling.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft -specs=nosys.specs -specs=nano.specs -T"../STM32F103C8Tx_FLASH.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "test_ceedling.elf" @"objects.list"   -lm
+Finished building target: test_ceedling.elf
+ 
+make --no-print-directory post-build
+Generating hex and Printing size information:
+arm-none-eabi-objcopy -O ihex "test_ceedling.elf" "test_ceedling.hex"
+arm-none-eabi-size "test_ceedling.elf"
+   text	   data	    bss	    dec	    hex	filename
+    648	     16	   1568	   2232	    8b8	test_ceedling.elf
+ 
+02:21:04 **** Incremental Build of configuration Debug for project test_ceedling ****
+make all 
+Building file: ../src/timer.c
+Invoking: MCU GCC Compiler
+C:\Bennyaw\STM32\test_ceedling\test_ceedling\Debug
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F103xB -I"C:/Bennyaw/STM32/test_ceedling/test_ceedling/Core/Inc" -I"C:/Bennyaw/STM32/test_ceedling/test_ceedling/src" -I"C:/Bennyaw/STM32/test_ceedling/test_ceedling/Drivers/STM32F1xx_HAL_Driver/Inc" -I"C:/Bennyaw/STM32/test_ceedling/test_ceedling/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy" -I"C:/Bennyaw/STM32/test_ceedling/test_ceedling/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"C:/Bennyaw/STM32/test_ceedling/test_ceedling/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"src/timer.d" -MT"src/timer.o" -o "src/timer.o" "../src/timer.c"
+../src/timer.c: In function 'setDeadTime':
+../src/timer.c:40:2: warning: 'return' with no value, in function returning non-void
+  return ;
+  ^~~~~~
+../src/timer.c:37:5: note: declared here
+ int setDeadTime(uint32_t deadTime_ns){
+     ^~~~~~~~~~~
+../src/timer.c:39:6: warning: unused variable 'period_clk_base' [-Wunused-variable]
+  int period_clk_base = 1/clk_int;
+      ^~~~~~~~~~~~~~~
+Finished building: ../src/timer.c
+ 
+Building target: test_ceedling.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft -specs=nosys.specs -specs=nano.specs -T"../STM32F103C8Tx_FLASH.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "test_ceedling.elf" @"objects.list"   -lm
+Finished building target: test_ceedling.elf
+ 
+make --no-print-directory post-build
+Generating hex and Printing size information:
+arm-none-eabi-objcopy -O ihex "test_ceedling.elf" "test_ceedling.hex"
+arm-none-eabi-size "test_ceedling.elf"
+   text	   data	    bss	    dec	    hex	filename
+    648	     16	   1568	   2232	    8b8	test_ceedling.elf
+ 
+02:21:46 **** Incremental Build of configuration Debug for project test_ceedling ****
+make all 
+Building file: ../src/timer.c
+Invoking: MCU GCC Compiler
+C:\Bennyaw\STM32\test_ceedling\test_ceedling\Debug
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F103xB -I"C:/Bennyaw/STM32/test_ceedling/test_ceedling/Core/Inc" -I"C:/Bennyaw/STM32/test_ceedling/test_ceedling/src" -I"C:/Bennyaw/STM32/test_ceedling/test_ceedling/Drivers/STM32F1xx_HAL_Driver/Inc" -I"C:/Bennyaw/STM32/test_ceedling/test_ceedling/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy" -I"C:/Bennyaw/STM32/test_ceedling/test_ceedling/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"C:/Bennyaw/STM32/test_ceedling/test_ceedling/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"src/timer.d" -MT"src/timer.o" -o "src/timer.o" "../src/timer.c"
+../src/timer.c: In function 'setDeadTime':
+../src/timer.c:40:2: warning: 'return' with no value, in function returning non-void
+  return ;
+  ^~~~~~
+../src/timer.c:37:5: note: declared here
+ int setDeadTime(uint32_t deadTime_ns){
+     ^~~~~~~~~~~
+../src/timer.c:39:6: warning: unused variable 'period_clk_base' [-Wunused-variable]
+  int period_clk_base = 1/clk_int;
+      ^~~~~~~~~~~~~~~
+Finished building: ../src/timer.c
+ 
+Building target: test_ceedling.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft -specs=nosys.specs -specs=nano.specs -T"../STM32F103C8Tx_FLASH.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "test_ceedling.elf" @"objects.list"   -lm
+Finished building target: test_ceedling.elf
+ 
+make --no-print-directory post-build
+Generating hex and Printing size information:
+arm-none-eabi-objcopy -O ihex "test_ceedling.elf" "test_ceedling.hex"
+arm-none-eabi-size "test_ceedling.elf"
+   text	   data	    bss	    dec	    hex	filename
+    648	     16	   1568	   2232	    8b8	test_ceedling.elf
+ 
+02:22:27 **** Incremental Build of configuration Debug for project test_ceedling ****
+make all 
+Building file: ../src/timer.c
+Invoking: MCU GCC Compiler
+C:\Bennyaw\STM32\test_ceedling\test_ceedling\Debug
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F103xB -I"C:/Bennyaw/STM32/test_ceedling/test_ceedling/Core/Inc" -I"C:/Bennyaw/STM32/test_ceedling/test_ceedling/src" -I"C:/Bennyaw/STM32/test_ceedling/test_ceedling/Drivers/STM32F1xx_HAL_Driver/Inc" -I"C:/Bennyaw/STM32/test_ceedling/test_ceedling/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy" -I"C:/Bennyaw/STM32/test_ceedling/test_ceedling/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"C:/Bennyaw/STM32/test_ceedling/test_ceedling/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"src/timer.d" -MT"src/timer.o" -o "src/timer.o" "../src/timer.c"
+../src/timer.c: In function 'setDeadTime':
+../src/timer.c:40:2: warning: 'return' with no value, in function returning non-void
+  return ;
+  ^~~~~~
+../src/timer.c:37:5: note: declared here
+ int setDeadTime(uint32_t deadTime_ns){
+     ^~~~~~~~~~~
+../src/timer.c:39:6: warning: unused variable 'period_clk_base' [-Wunused-variable]
+  int period_clk_base = 1/clk_int;
+      ^~~~~~~~~~~~~~~
+Finished building: ../src/timer.c
+ 
+Building target: test_ceedling.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft -specs=nosys.specs -specs=nano.specs -T"../STM32F103C8Tx_FLASH.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "test_ceedling.elf" @"objects.list"   -lm
+Finished building target: test_ceedling.elf
+ 
+make --no-print-directory post-build
+Generating hex and Printing size information:
+arm-none-eabi-objcopy -O ihex "test_ceedling.elf" "test_ceedling.hex"
+arm-none-eabi-size "test_ceedling.elf"
+   text	   data	    bss	    dec	    hex	filename
+    648	     16	   1568	   2232	    8b8	test_ceedling.elf
+ 
+02:22:51 **** Incremental Build of configuration Debug for project test_ceedling ****
+make all 
+Building file: ../src/timer.c
+Invoking: MCU GCC Compiler
+C:\Bennyaw\STM32\test_ceedling\test_ceedling\Debug
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F103xB -I"C:/Bennyaw/STM32/test_ceedling/test_ceedling/Core/Inc" -I"C:/Bennyaw/STM32/test_ceedling/test_ceedling/src" -I"C:/Bennyaw/STM32/test_ceedling/test_ceedling/Drivers/STM32F1xx_HAL_Driver/Inc" -I"C:/Bennyaw/STM32/test_ceedling/test_ceedling/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy" -I"C:/Bennyaw/STM32/test_ceedling/test_ceedling/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"C:/Bennyaw/STM32/test_ceedling/test_ceedling/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"src/timer.d" -MT"src/timer.o" -o "src/timer.o" "../src/timer.c"
+../src/timer.c: In function 'setDeadTime':
+../src/timer.c:40:2: warning: 'return' with no value, in function returning non-void
+  return ;
+  ^~~~~~
+../src/timer.c:37:5: note: declared here
+ int setDeadTime(uint32_t deadTime_ns){
+     ^~~~~~~~~~~
+../src/timer.c:39:6: warning: unused variable 'period_clk_base' [-Wunused-variable]
+  int period_clk_base = 1/clk_int;
+      ^~~~~~~~~~~~~~~
+Finished building: ../src/timer.c
+ 
+Building target: test_ceedling.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft -specs=nosys.specs -specs=nano.specs -T"../STM32F103C8Tx_FLASH.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "test_ceedling.elf" @"objects.list"   -lm
+Finished building target: test_ceedling.elf
+ 
+make --no-print-directory post-build
+Generating hex and Printing size information:
+arm-none-eabi-objcopy -O ihex "test_ceedling.elf" "test_ceedling.hex"
+arm-none-eabi-size "test_ceedling.elf"
+   text	   data	    bss	    dec	    hex	filename
+    648	     16	   1568	   2232	    8b8	test_ceedling.elf
+ 
+02:23:12 **** Incremental Build of configuration Debug for project test_ceedling ****
+make all 
+Building file: ../src/timer.c
+Invoking: MCU GCC Compiler
+C:\Bennyaw\STM32\test_ceedling\test_ceedling\Debug
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F103xB -I"C:/Bennyaw/STM32/test_ceedling/test_ceedling/Core/Inc" -I"C:/Bennyaw/STM32/test_ceedling/test_ceedling/src" -I"C:/Bennyaw/STM32/test_ceedling/test_ceedling/Drivers/STM32F1xx_HAL_Driver/Inc" -I"C:/Bennyaw/STM32/test_ceedling/test_ceedling/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy" -I"C:/Bennyaw/STM32/test_ceedling/test_ceedling/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"C:/Bennyaw/STM32/test_ceedling/test_ceedling/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"src/timer.d" -MT"src/timer.o" -o "src/timer.o" "../src/timer.c"
+../src/timer.c: In function 'setDeadTime':
+../src/timer.c:40:2: warning: 'return' with no value, in function returning non-void
+  return ;
+  ^~~~~~
+../src/timer.c:37:5: note: declared here
+ int setDeadTime(uint32_t deadTime_ns){
+     ^~~~~~~~~~~
+../src/timer.c:39:6: warning: unused variable 'period_clk_base' [-Wunused-variable]
+  int period_clk_base = 1/clk_int;
+      ^~~~~~~~~~~~~~~
+Finished building: ../src/timer.c
+ 
+Building target: test_ceedling.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft -specs=nosys.specs -specs=nano.specs -T"../STM32F103C8Tx_FLASH.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "test_ceedling.elf" @"objects.list"   -lm
+Finished building target: test_ceedling.elf
+ 
+make --no-print-directory post-build
+Generating hex and Printing size information:
+arm-none-eabi-objcopy -O ihex "test_ceedling.elf" "test_ceedling.hex"
+arm-none-eabi-size "test_ceedling.elf"
+   text	   data	    bss	    dec	    hex	filename
+    648	     16	   1568	   2232	    8b8	test_ceedling.elf
+ 
+02:23:29 **** Incremental Build of configuration Debug for project test_ceedling ****
+make all 
+Building file: ../src/timer.c
+Invoking: MCU GCC Compiler
+C:\Bennyaw\STM32\test_ceedling\test_ceedling\Debug
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F103xB -I"C:/Bennyaw/STM32/test_ceedling/test_ceedling/Core/Inc" -I"C:/Bennyaw/STM32/test_ceedling/test_ceedling/src" -I"C:/Bennyaw/STM32/test_ceedling/test_ceedling/Drivers/STM32F1xx_HAL_Driver/Inc" -I"C:/Bennyaw/STM32/test_ceedling/test_ceedling/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy" -I"C:/Bennyaw/STM32/test_ceedling/test_ceedling/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"C:/Bennyaw/STM32/test_ceedling/test_ceedling/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"src/timer.d" -MT"src/timer.o" -o "src/timer.o" "../src/timer.c"
+../src/timer.c: In function 'clk_int_peiord':
+../src/timer.c:10:28: warning: format '%u' expects argument of type 'unsigned int', but argument 3 has type 'double' [-Wformat=]
+  printf("%.9f, period = %.9u",test_val,period);
+                         ~~~^
+                         %.9f
+../src/timer.c: In function 'setDeadTime':
+../src/timer.c:40:2: warning: 'return' with no value, in function returning non-void
+  return ;
+  ^~~~~~
+../src/timer.c:37:5: note: declared here
+ int setDeadTime(uint32_t deadTime_ns){
+     ^~~~~~~~~~~
+../src/timer.c:39:6: warning: unused variable 'period_clk_base' [-Wunused-variable]
+  int period_clk_base = 1/clk_int;
+      ^~~~~~~~~~~~~~~
+Finished building: ../src/timer.c
+ 
+Building target: test_ceedling.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft -specs=nosys.specs -specs=nano.specs -T"../STM32F103C8Tx_FLASH.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "test_ceedling.elf" @"objects.list"   -lm
+Finished building target: test_ceedling.elf
+ 
+make --no-print-directory post-build
+Generating hex and Printing size information:
+arm-none-eabi-objcopy -O ihex "test_ceedling.elf" "test_ceedling.hex"
+arm-none-eabi-size "test_ceedling.elf"
+   text	   data	    bss	    dec	    hex	filename
+    648	     16	   1568	   2232	    8b8	test_ceedling.elf
+ 
+02:24:06 **** Incremental Build of configuration Debug for project test_ceedling ****
+make all 
+Building file: ../src/timer.c
+Invoking: MCU GCC Compiler
+C:\Bennyaw\STM32\test_ceedling\test_ceedling\Debug
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F103xB -I"C:/Bennyaw/STM32/test_ceedling/test_ceedling/Core/Inc" -I"C:/Bennyaw/STM32/test_ceedling/test_ceedling/src" -I"C:/Bennyaw/STM32/test_ceedling/test_ceedling/Drivers/STM32F1xx_HAL_Driver/Inc" -I"C:/Bennyaw/STM32/test_ceedling/test_ceedling/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy" -I"C:/Bennyaw/STM32/test_ceedling/test_ceedling/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"C:/Bennyaw/STM32/test_ceedling/test_ceedling/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"src/timer.d" -MT"src/timer.o" -o "src/timer.o" "../src/timer.c"
+../src/timer.c: In function 'setDeadTime':
+../src/timer.c:40:2: warning: 'return' with no value, in function returning non-void
+  return ;
+  ^~~~~~
+../src/timer.c:37:5: note: declared here
+ int setDeadTime(uint32_t deadTime_ns){
+     ^~~~~~~~~~~
+../src/timer.c:39:6: warning: unused variable 'period_clk_base' [-Wunused-variable]
+  int period_clk_base = 1/clk_int;
+      ^~~~~~~~~~~~~~~
+Finished building: ../src/timer.c
+ 
+Building target: test_ceedling.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft -specs=nosys.specs -specs=nano.specs -T"../STM32F103C8Tx_FLASH.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "test_ceedling.elf" @"objects.list"   -lm
+Finished building target: test_ceedling.elf
+ 
+make --no-print-directory post-build
+Generating hex and Printing size information:
+arm-none-eabi-objcopy -O ihex "test_ceedling.elf" "test_ceedling.hex"
+arm-none-eabi-size "test_ceedling.elf"
+   text	   data	    bss	    dec	    hex	filename
+    648	     16	   1568	   2232	    8b8	test_ceedling.elf
+ 
+02:24:51 **** Incremental Build of configuration Debug for project test_ceedling ****
+make all 
+Building file: ../src/timer.c
+Invoking: MCU GCC Compiler
+C:\Bennyaw\STM32\test_ceedling\test_ceedling\Debug
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F103xB -I"C:/Bennyaw/STM32/test_ceedling/test_ceedling/Core/Inc" -I"C:/Bennyaw/STM32/test_ceedling/test_ceedling/src" -I"C:/Bennyaw/STM32/test_ceedling/test_ceedling/Drivers/STM32F1xx_HAL_Driver/Inc" -I"C:/Bennyaw/STM32/test_ceedling/test_ceedling/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy" -I"C:/Bennyaw/STM32/test_ceedling/test_ceedling/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"C:/Bennyaw/STM32/test_ceedling/test_ceedling/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"src/timer.d" -MT"src/timer.o" -o "src/timer.o" "../src/timer.c"
+../src/timer.c: In function 'setDeadTime':
+../src/timer.c:40:2: warning: 'return' with no value, in function returning non-void
+  return ;
+  ^~~~~~
+../src/timer.c:37:5: note: declared here
+ int setDeadTime(uint32_t deadTime_ns){
+     ^~~~~~~~~~~
+../src/timer.c:39:6: warning: unused variable 'period_clk_base' [-Wunused-variable]
+  int period_clk_base = 1/clk_int;
+      ^~~~~~~~~~~~~~~
+Finished building: ../src/timer.c
+ 
+Building target: test_ceedling.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft -specs=nosys.specs -specs=nano.specs -T"../STM32F103C8Tx_FLASH.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "test_ceedling.elf" @"objects.list"   -lm
+Finished building target: test_ceedling.elf
+ 
+make --no-print-directory post-build
+Generating hex and Printing size information:
+arm-none-eabi-objcopy -O ihex "test_ceedling.elf" "test_ceedling.hex"
+arm-none-eabi-size "test_ceedling.elf"
+   text	   data	    bss	    dec	    hex	filename
+    648	     16	   1568	   2232	    8b8	test_ceedling.elf
+ 
+02:25:21 **** Incremental Build of configuration Debug for project test_ceedling ****
+make all 
+Building file: ../src/timer.c
+Invoking: MCU GCC Compiler
+C:\Bennyaw\STM32\test_ceedling\test_ceedling\Debug
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F103xB -I"C:/Bennyaw/STM32/test_ceedling/test_ceedling/Core/Inc" -I"C:/Bennyaw/STM32/test_ceedling/test_ceedling/src" -I"C:/Bennyaw/STM32/test_ceedling/test_ceedling/Drivers/STM32F1xx_HAL_Driver/Inc" -I"C:/Bennyaw/STM32/test_ceedling/test_ceedling/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy" -I"C:/Bennyaw/STM32/test_ceedling/test_ceedling/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"C:/Bennyaw/STM32/test_ceedling/test_ceedling/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"src/timer.d" -MT"src/timer.o" -o "src/timer.o" "../src/timer.c"
+../src/timer.c: In function 'setDeadTime':
+../src/timer.c:40:2: warning: 'return' with no value, in function returning non-void
+  return ;
+  ^~~~~~
+../src/timer.c:37:5: note: declared here
+ int setDeadTime(uint32_t deadTime_ns){
+     ^~~~~~~~~~~
+../src/timer.c:39:6: warning: unused variable 'period_clk_base' [-Wunused-variable]
+  int period_clk_base = 1/clk_int;
+      ^~~~~~~~~~~~~~~
+Finished building: ../src/timer.c
+ 
+Building target: test_ceedling.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft -specs=nosys.specs -specs=nano.specs -T"../STM32F103C8Tx_FLASH.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "test_ceedling.elf" @"objects.list"   -lm
+Finished building target: test_ceedling.elf
+ 
+make --no-print-directory post-build
+Generating hex and Printing size information:
+arm-none-eabi-objcopy -O ihex "test_ceedling.elf" "test_ceedling.hex"
+arm-none-eabi-size "test_ceedling.elf"
+   text	   data	    bss	    dec	    hex	filename
+    648	     16	   1568	   2232	    8b8	test_ceedling.elf
+ 
+02:26:11 **** Incremental Build of configuration Debug for project test_ceedling ****
+make all 
+Building file: ../src/timer.c
+Invoking: MCU GCC Compiler
+C:\Bennyaw\STM32\test_ceedling\test_ceedling\Debug
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F103xB -I"C:/Bennyaw/STM32/test_ceedling/test_ceedling/Core/Inc" -I"C:/Bennyaw/STM32/test_ceedling/test_ceedling/src" -I"C:/Bennyaw/STM32/test_ceedling/test_ceedling/Drivers/STM32F1xx_HAL_Driver/Inc" -I"C:/Bennyaw/STM32/test_ceedling/test_ceedling/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy" -I"C:/Bennyaw/STM32/test_ceedling/test_ceedling/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"C:/Bennyaw/STM32/test_ceedling/test_ceedling/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"src/timer.d" -MT"src/timer.o" -o "src/timer.o" "../src/timer.c"
+../src/timer.c: In function 'setDeadTime':
+../src/timer.c:40:2: warning: 'return' with no value, in function returning non-void
+  return ;
+  ^~~~~~
+../src/timer.c:37:5: note: declared here
+ int setDeadTime(uint32_t deadTime_ns){
+     ^~~~~~~~~~~
+../src/timer.c:39:6: warning: unused variable 'period_clk_base' [-Wunused-variable]
+  int period_clk_base = 1/clk_int;
+      ^~~~~~~~~~~~~~~
+Finished building: ../src/timer.c
+ 
+Building target: test_ceedling.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft -specs=nosys.specs -specs=nano.specs -T"../STM32F103C8Tx_FLASH.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "test_ceedling.elf" @"objects.list"   -lm
+Finished building target: test_ceedling.elf
+ 
+make --no-print-directory post-build
+Generating hex and Printing size information:
+arm-none-eabi-objcopy -O ihex "test_ceedling.elf" "test_ceedling.hex"
+arm-none-eabi-size "test_ceedling.elf"
+   text	   data	    bss	    dec	    hex	filename
+    648	     16	   1568	   2232	    8b8	test_ceedling.elf
+ 
+02:27:42 **** Incremental Build of configuration Debug for project test_ceedling ****
+make all 
+Building file: ../src/timer.c
+Invoking: MCU GCC Compiler
+C:\Bennyaw\STM32\test_ceedling\test_ceedling\Debug
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F103xB -I"C:/Bennyaw/STM32/test_ceedling/test_ceedling/Core/Inc" -I"C:/Bennyaw/STM32/test_ceedling/test_ceedling/src" -I"C:/Bennyaw/STM32/test_ceedling/test_ceedling/Drivers/STM32F1xx_HAL_Driver/Inc" -I"C:/Bennyaw/STM32/test_ceedling/test_ceedling/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy" -I"C:/Bennyaw/STM32/test_ceedling/test_ceedling/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"C:/Bennyaw/STM32/test_ceedling/test_ceedling/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"src/timer.d" -MT"src/timer.o" -o "src/timer.o" "../src/timer.c"
+../src/timer.c: In function 'clk_int_peiord':
+../src/timer.c:9:29: error: invalid operands to binary / (have 'float *' and 'float *')
+  float test_val = ((float*)1/(float*)HAL_RCC_GetHCLKFreq)*pow(10,9);
+                             ^
+../src/timer.c: In function 'setDeadTime':
+../src/timer.c:40:2: warning: 'return' with no value, in function returning non-void
+  return ;
+  ^~~~~~
+../src/timer.c:37:5: note: declared here
+ int setDeadTime(uint32_t deadTime_ns){
+     ^~~~~~~~~~~
+../src/timer.c:39:6: warning: unused variable 'period_clk_base' [-Wunused-variable]
+  int period_clk_base = 1/clk_int;
+      ^~~~~~~~~~~~~~~
+src/subdir.mk:18: recipe for target 'src/timer.o' failed
+make: *** [src/timer.o] Error 1
+02:28:09 **** Incremental Build of configuration Debug for project test_ceedling ****
+make all 
+Building file: ../src/timer.c
+Invoking: MCU GCC Compiler
+C:\Bennyaw\STM32\test_ceedling\test_ceedling\Debug
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F103xB -I"C:/Bennyaw/STM32/test_ceedling/test_ceedling/Core/Inc" -I"C:/Bennyaw/STM32/test_ceedling/test_ceedling/src" -I"C:/Bennyaw/STM32/test_ceedling/test_ceedling/Drivers/STM32F1xx_HAL_Driver/Inc" -I"C:/Bennyaw/STM32/test_ceedling/test_ceedling/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy" -I"C:/Bennyaw/STM32/test_ceedling/test_ceedling/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"C:/Bennyaw/STM32/test_ceedling/test_ceedling/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"src/timer.d" -MT"src/timer.o" -o "src/timer.o" "../src/timer.c"
+../src/timer.c: In function 'clk_int_peiord':
+../src/timer.c:9:21: error: invalid operands to binary / (have 'int' and 'float *')
+  float test_val = (1/(float*)HAL_RCC_GetHCLKFreq)*pow(10,9);
+                     ^
+../src/timer.c: In function 'setDeadTime':
+../src/timer.c:40:2: warning: 'return' with no value, in function returning non-void
+  return ;
+  ^~~~~~
+../src/timer.c:37:5: note: declared here
+ int setDeadTime(uint32_t deadTime_ns){
+     ^~~~~~~~~~~
+../src/timer.c:39:6: warning: unused variable 'period_clk_base' [-Wunused-variable]
+  int period_clk_base = 1/clk_int;
+      ^~~~~~~~~~~~~~~
+src/subdir.mk:18: recipe for target 'src/timer.o' failed
+make: *** [src/timer.o] Error 1
+02:28:38 **** Incremental Build of configuration Debug for project test_ceedling ****
+make all 
+Building file: ../src/timer.c
+Invoking: MCU GCC Compiler
+C:\Bennyaw\STM32\test_ceedling\test_ceedling\Debug
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F103xB -I"C:/Bennyaw/STM32/test_ceedling/test_ceedling/Core/Inc" -I"C:/Bennyaw/STM32/test_ceedling/test_ceedling/src" -I"C:/Bennyaw/STM32/test_ceedling/test_ceedling/Drivers/STM32F1xx_HAL_Driver/Inc" -I"C:/Bennyaw/STM32/test_ceedling/test_ceedling/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy" -I"C:/Bennyaw/STM32/test_ceedling/test_ceedling/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"C:/Bennyaw/STM32/test_ceedling/test_ceedling/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"src/timer.d" -MT"src/timer.o" -o "src/timer.o" "../src/timer.c"
+../src/timer.c: In function 'clk_int_peiord':
+../src/timer.c:9:19: error: invalid operands to binary / (have 'int' and 'float *')
+  int test_val = (1/(float*)HAL_RCC_GetHCLKFreq)*pow(10,9);
+                   ^
+../src/timer.c:10:13: warning: format '%f' expects argument of type 'double', but argument 2 has type 'int' [-Wformat=]
+  printf("%.9f, period = %.9f",test_val,period);
+          ~~~^
+          %.9d
+../src/timer.c: In function 'setDeadTime':
+../src/timer.c:40:2: warning: 'return' with no value, in function returning non-void
+  return ;
+  ^~~~~~
+../src/timer.c:37:5: note: declared here
+ int setDeadTime(uint32_t deadTime_ns){
+     ^~~~~~~~~~~
+../src/timer.c:39:6: warning: unused variable 'period_clk_base' [-Wunused-variable]
+  int period_clk_base = 1/clk_int;
+      ^~~~~~~~~~~~~~~
+make: *** [src/timer.o] Error 1
+src/subdir.mk:18: recipe for target 'src/timer.o' failed
+02:29:01 **** Incremental Build of configuration Debug for project test_ceedling ****
+make all 
+Building file: ../src/timer.c
+Invoking: MCU GCC Compiler
+C:\Bennyaw\STM32\test_ceedling\test_ceedling\Debug
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F103xB -I"C:/Bennyaw/STM32/test_ceedling/test_ceedling/Core/Inc" -I"C:/Bennyaw/STM32/test_ceedling/test_ceedling/src" -I"C:/Bennyaw/STM32/test_ceedling/test_ceedling/Drivers/STM32F1xx_HAL_Driver/Inc" -I"C:/Bennyaw/STM32/test_ceedling/test_ceedling/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy" -I"C:/Bennyaw/STM32/test_ceedling/test_ceedling/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"C:/Bennyaw/STM32/test_ceedling/test_ceedling/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"src/timer.d" -MT"src/timer.o" -o "src/timer.o" "../src/timer.c"
+../src/timer.c: In function 'clk_int_peiord':
+../src/timer.c:9:48: error: invalid operands to binary * (have 'float *' and 'double')
+  int test_val = (float*)(1/HAL_RCC_GetHCLKFreq)*pow(10,9);
+                                                ^~~~~~~~~~
+../src/timer.c:10:13: warning: format '%f' expects argument of type 'double', but argument 2 has type 'int' [-Wformat=]
+  printf("%.9f, period = %.9f",test_val,period);
+          ~~~^
+          %.9d
+../src/timer.c: In function 'setDeadTime':
+../src/timer.c:40:2: warning: 'return' with no value, in function returning non-void
+  return ;
+  ^~~~~~
+../src/timer.c:37:5: note: declared here
+ int setDeadTime(uint32_t deadTime_ns){
+     ^~~~~~~~~~~
+../src/timer.c:39:6: warning: unused variable 'period_clk_base' [-Wunused-variable]
+  int period_clk_base = 1/clk_int;
+      ^~~~~~~~~~~~~~~
+src/subdir.mk:18: recipe for target 'src/timer.o' failed
+make: *** [src/timer.o] Error 1
+02:30:03 **** Incremental Build of configuration Debug for project test_ceedling ****
+make all 
+Building file: ../src/timer.c
+Invoking: MCU GCC Compiler
+C:\Bennyaw\STM32\test_ceedling\test_ceedling\Debug
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F103xB -I"C:/Bennyaw/STM32/test_ceedling/test_ceedling/Core/Inc" -I"C:/Bennyaw/STM32/test_ceedling/test_ceedling/src" -I"C:/Bennyaw/STM32/test_ceedling/test_ceedling/Drivers/STM32F1xx_HAL_Driver/Inc" -I"C:/Bennyaw/STM32/test_ceedling/test_ceedling/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy" -I"C:/Bennyaw/STM32/test_ceedling/test_ceedling/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"C:/Bennyaw/STM32/test_ceedling/test_ceedling/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"src/timer.d" -MT"src/timer.o" -o "src/timer.o" "../src/timer.c"
+../src/timer.c: In function 'clk_int_peiord':
+../src/timer.c:9:19: error: invalid operands to binary / (have 'int' and 'int *')
+  int test_val = (1/(int*)HAL_RCC_GetHCLKFreq)*pow(10,9);
+                   ^
+../src/timer.c:10:13: warning: format '%f' expects argument of type 'double', but argument 2 has type 'int' [-Wformat=]
+  printf("%.9f, period = %.9f",test_val,period);
+          ~~~^
+          %.9d
+../src/timer.c: In function 'setDeadTime':
+../src/timer.c:40:2: warning: 'return' with no value, in function returning non-void
+  return ;
+  ^~~~~~
+../src/timer.c:37:5: note: declared here
+ int setDeadTime(uint32_t deadTime_ns){
+     ^~~~~~~~~~~
+../src/timer.c:39:6: warning: unused variable 'period_clk_base' [-Wunused-variable]
+  int period_clk_base = 1/clk_int;
+      ^~~~~~~~~~~~~~~
+src/subdir.mk:18: recipe for target 'src/timer.o' failed
+make: *** [src/timer.o] Error 1
+02:30:22 **** Incremental Build of configuration Debug for project test_ceedling ****
+make all 
+Building file: ../src/timer.c
+Invoking: MCU GCC Compiler
+C:\Bennyaw\STM32\test_ceedling\test_ceedling\Debug
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F103xB -I"C:/Bennyaw/STM32/test_ceedling/test_ceedling/Core/Inc" -I"C:/Bennyaw/STM32/test_ceedling/test_ceedling/src" -I"C:/Bennyaw/STM32/test_ceedling/test_ceedling/Drivers/STM32F1xx_HAL_Driver/Inc" -I"C:/Bennyaw/STM32/test_ceedling/test_ceedling/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy" -I"C:/Bennyaw/STM32/test_ceedling/test_ceedling/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"C:/Bennyaw/STM32/test_ceedling/test_ceedling/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"src/timer.d" -MT"src/timer.o" -o "src/timer.o" "../src/timer.c"
+../src/timer.c: In function 'clk_int_peiord':
+../src/timer.c:10:13: warning: format '%f' expects argument of type 'double', but argument 2 has type 'int' [-Wformat=]
+  printf("%.9f, period = %.9f",test_val,period);
+          ~~~^
+          %.9d
+../src/timer.c: In function 'setDeadTime':
+../src/timer.c:40:2: warning: 'return' with no value, in function returning non-void
+  return ;
+  ^~~~~~
+../src/timer.c:37:5: note: declared here
+ int setDeadTime(uint32_t deadTime_ns){
+     ^~~~~~~~~~~
+../src/timer.c:39:6: warning: unused variable 'period_clk_base' [-Wunused-variable]
+  int period_clk_base = 1/clk_int;
+      ^~~~~~~~~~~~~~~
+Finished building: ../src/timer.c
+ 
+Building target: test_ceedling.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft -specs=nosys.specs -specs=nano.specs -T"../STM32F103C8Tx_FLASH.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "test_ceedling.elf" @"objects.list"   -lm
+Finished building target: test_ceedling.elf
+ 
+make --no-print-directory post-build
+Generating hex and Printing size information:
+arm-none-eabi-objcopy -O ihex "test_ceedling.elf" "test_ceedling.hex"
+arm-none-eabi-size "test_ceedling.elf"
+   text	   data	    bss	    dec	    hex	filename
+    648	     16	   1568	   2232	    8b8	test_ceedling.elf
+ 
+02:31:09 **** Incremental Build of configuration Debug for project test_ceedling ****
+make all 
+Building file: ../src/timer.c
+Invoking: MCU GCC Compiler
+C:\Bennyaw\STM32\test_ceedling\test_ceedling\Debug
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F103xB -I"C:/Bennyaw/STM32/test_ceedling/test_ceedling/Core/Inc" -I"C:/Bennyaw/STM32/test_ceedling/test_ceedling/src" -I"C:/Bennyaw/STM32/test_ceedling/test_ceedling/Drivers/STM32F1xx_HAL_Driver/Inc" -I"C:/Bennyaw/STM32/test_ceedling/test_ceedling/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy" -I"C:/Bennyaw/STM32/test_ceedling/test_ceedling/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"C:/Bennyaw/STM32/test_ceedling/test_ceedling/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"src/timer.d" -MT"src/timer.o" -o "src/timer.o" "../src/timer.c"
+../src/timer.c: In function 'clk_int_peiord':
+../src/timer.c:10:13: warning: format '%f' expects argument of type 'double', but argument 2 has type 'int' [-Wformat=]
+  printf("%.9f, period = %.9f",test_val,period);
+          ~~~^
+          %.9d
+../src/timer.c: In function 'setDeadTime':
+../src/timer.c:40:2: warning: 'return' with no value, in function returning non-void
+  return ;
+  ^~~~~~
+../src/timer.c:37:5: note: declared here
+ int setDeadTime(uint32_t deadTime_ns){
+     ^~~~~~~~~~~
+../src/timer.c:39:6: warning: unused variable 'period_clk_base' [-Wunused-variable]
+  int period_clk_base = 1/clk_int;
+      ^~~~~~~~~~~~~~~
+Finished building: ../src/timer.c
+ 
+Building target: test_ceedling.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft -specs=nosys.specs -specs=nano.specs -T"../STM32F103C8Tx_FLASH.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "test_ceedling.elf" @"objects.list"   -lm
+Finished building target: test_ceedling.elf
+ 
+make --no-print-directory post-build
+Generating hex and Printing size information:
+arm-none-eabi-objcopy -O ihex "test_ceedling.elf" "test_ceedling.hex"
+arm-none-eabi-size "test_ceedling.elf"
+   text	   data	    bss	    dec	    hex	filename
+    648	     16	   1568	   2232	    8b8	test_ceedling.elf
+ 
+02:31:26 **** Incremental Build of configuration Debug for project test_ceedling ****
+make all 
+Building file: ../src/timer.c
+Invoking: MCU GCC Compiler
+C:\Bennyaw\STM32\test_ceedling\test_ceedling\Debug
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F103xB -I"C:/Bennyaw/STM32/test_ceedling/test_ceedling/Core/Inc" -I"C:/Bennyaw/STM32/test_ceedling/test_ceedling/src" -I"C:/Bennyaw/STM32/test_ceedling/test_ceedling/Drivers/STM32F1xx_HAL_Driver/Inc" -I"C:/Bennyaw/STM32/test_ceedling/test_ceedling/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy" -I"C:/Bennyaw/STM32/test_ceedling/test_ceedling/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"C:/Bennyaw/STM32/test_ceedling/test_ceedling/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"src/timer.d" -MT"src/timer.o" -o "src/timer.o" "../src/timer.c"
+../src/timer.c: In function 'setDeadTime':
+../src/timer.c:40:2: warning: 'return' with no value, in function returning non-void
+  return ;
+  ^~~~~~
+../src/timer.c:37:5: note: declared here
+ int setDeadTime(uint32_t deadTime_ns){
+     ^~~~~~~~~~~
+../src/timer.c:39:6: warning: unused variable 'period_clk_base' [-Wunused-variable]
+  int period_clk_base = 1/clk_int;
+      ^~~~~~~~~~~~~~~
+Finished building: ../src/timer.c
+ 
+Building target: test_ceedling.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft -specs=nosys.specs -specs=nano.specs -T"../STM32F103C8Tx_FLASH.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "test_ceedling.elf" @"objects.list"   -lm
+Finished building target: test_ceedling.elf
+ 
+make --no-print-directory post-build
+Generating hex and Printing size information:
+arm-none-eabi-objcopy -O ihex "test_ceedling.elf" "test_ceedling.hex"
+arm-none-eabi-size "test_ceedling.elf"
+   text	   data	    bss	    dec	    hex	filename
+    648	     16	   1568	   2232	    8b8	test_ceedling.elf
+ 
+02:31:55 **** Incremental Build of configuration Debug for project test_ceedling ****
+make all 
+Building file: ../src/timer.c
+Invoking: MCU GCC Compiler
+C:\Bennyaw\STM32\test_ceedling\test_ceedling\Debug
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F103xB -I"C:/Bennyaw/STM32/test_ceedling/test_ceedling/Core/Inc" -I"C:/Bennyaw/STM32/test_ceedling/test_ceedling/src" -I"C:/Bennyaw/STM32/test_ceedling/test_ceedling/Drivers/STM32F1xx_HAL_Driver/Inc" -I"C:/Bennyaw/STM32/test_ceedling/test_ceedling/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy" -I"C:/Bennyaw/STM32/test_ceedling/test_ceedling/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"C:/Bennyaw/STM32/test_ceedling/test_ceedling/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"src/timer.d" -MT"src/timer.o" -o "src/timer.o" "../src/timer.c"
+../src/timer.c: In function 'setDeadTime':
+../src/timer.c:40:2: warning: 'return' with no value, in function returning non-void
+  return ;
+  ^~~~~~
+../src/timer.c:37:5: note: declared here
+ int setDeadTime(uint32_t deadTime_ns){
+     ^~~~~~~~~~~
+../src/timer.c:39:6: warning: unused variable 'period_clk_base' [-Wunused-variable]
+  int period_clk_base = 1/clk_int;
+      ^~~~~~~~~~~~~~~
+Finished building: ../src/timer.c
+ 
+Building target: test_ceedling.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft -specs=nosys.specs -specs=nano.specs -T"../STM32F103C8Tx_FLASH.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "test_ceedling.elf" @"objects.list"   -lm
+Finished building target: test_ceedling.elf
+ 
+make --no-print-directory post-build
+Generating hex and Printing size information:
+arm-none-eabi-objcopy -O ihex "test_ceedling.elf" "test_ceedling.hex"
+arm-none-eabi-size "test_ceedling.elf"
+   text	   data	    bss	    dec	    hex	filename
+    648	     16	   1568	   2232	    8b8	test_ceedling.elf
+ 
+02:33:30 **** Incremental Build of configuration Debug for project test_ceedling ****
+make all 
+make: Nothing to be done for 'all'.
+02:33:54 **** Incremental Build of configuration Debug for project test_ceedling ****
+make all 
+Building file: ../src/timer.c
+Invoking: MCU GCC Compiler
+C:\Bennyaw\STM32\test_ceedling\test_ceedling\Debug
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F103xB -I"C:/Bennyaw/STM32/test_ceedling/test_ceedling/Core/Inc" -I"C:/Bennyaw/STM32/test_ceedling/test_ceedling/src" -I"C:/Bennyaw/STM32/test_ceedling/test_ceedling/Drivers/STM32F1xx_HAL_Driver/Inc" -I"C:/Bennyaw/STM32/test_ceedling/test_ceedling/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy" -I"C:/Bennyaw/STM32/test_ceedling/test_ceedling/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"C:/Bennyaw/STM32/test_ceedling/test_ceedling/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"src/timer.d" -MT"src/timer.o" -o "src/timer.o" "../src/timer.c"
+../src/timer.c: In function 'setDeadTime':
+../src/timer.c:40:2: warning: 'return' with no value, in function returning non-void
+  return ;
+  ^~~~~~
+../src/timer.c:37:5: note: declared here
+ int setDeadTime(uint32_t deadTime_ns){
+     ^~~~~~~~~~~
+../src/timer.c:39:6: warning: unused variable 'period_clk_base' [-Wunused-variable]
+  int period_clk_base = 1/clk_int;
+      ^~~~~~~~~~~~~~~
+Finished building: ../src/timer.c
+ 
+Building target: test_ceedling.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft -specs=nosys.specs -specs=nano.specs -T"../STM32F103C8Tx_FLASH.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "test_ceedling.elf" @"objects.list"   -lm
+Finished building target: test_ceedling.elf
+ 
+make --no-print-directory post-build
+Generating hex and Printing size information:
+arm-none-eabi-objcopy -O ihex "test_ceedling.elf" "test_ceedling.hex"
+arm-none-eabi-size "test_ceedling.elf"
+   text	   data	    bss	    dec	    hex	filename
+    648	     16	   1568	   2232	    8b8	test_ceedling.elf
+ 
+02:35:50 **** Incremental Build of configuration Debug for project test_ceedling ****
+make all 
+Building file: ../src/timer.c
+Invoking: MCU GCC Compiler
+C:\Bennyaw\STM32\test_ceedling\test_ceedling\Debug
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F103xB -I"C:/Bennyaw/STM32/test_ceedling/test_ceedling/Core/Inc" -I"C:/Bennyaw/STM32/test_ceedling/test_ceedling/src" -I"C:/Bennyaw/STM32/test_ceedling/test_ceedling/Drivers/STM32F1xx_HAL_Driver/Inc" -I"C:/Bennyaw/STM32/test_ceedling/test_ceedling/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy" -I"C:/Bennyaw/STM32/test_ceedling/test_ceedling/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"C:/Bennyaw/STM32/test_ceedling/test_ceedling/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"src/timer.d" -MT"src/timer.o" -o "src/timer.o" "../src/timer.c"
+../src/timer.c: In function 'clk_int_peiord':
+../src/timer.c:10:28: warning: format '%f' expects a matching 'double' argument [-Wformat=]
+  printf("%.9f, period = %.9f",(float)1/(float)HAL_RCC_GetHCLKFreq),period);
+                         ~~~^
+../src/timer.c:10:67: warning: right-hand operand of comma expression has no effect [-Wunused-value]
+  printf("%.9f, period = %.9f",(float)1/(float)HAL_RCC_GetHCLKFreq),period);
+                                                                   ^
+../src/timer.c:10:74: error: expected ';' before ')' token
+  printf("%.9f, period = %.9f",(float)1/(float)HAL_RCC_GetHCLKFreq),period);
+                                                                          ^
+../src/timer.c:10:74: error: expected statement before ')' token
+../src/timer.c:9:8: warning: unused variable 'test_val' [-Wunused-variable]
+  float test_val = ((float)1/(float)HAL_RCC_GetHCLKFreq)*pow(10,9);
+        ^~~~~~~~
+../src/timer.c: In function 'setDeadTime':
+../src/timer.c:40:2: warning: 'return' with no value, in function returning non-void
+  return ;
+  ^~~~~~
+../src/timer.c:37:5: note: declared here
+ int setDeadTime(uint32_t deadTime_ns){
+     ^~~~~~~~~~~
+../src/timer.c:39:6: warning: unused variable 'period_clk_base' [-Wunused-variable]
+  int period_clk_base = 1/clk_int;
+      ^~~~~~~~~~~~~~~
+make: *** [src/timer.o] Error 1
+src/subdir.mk:18: recipe for target 'src/timer.o' failed
+02:36:07 **** Incremental Build of configuration Debug for project test_ceedling ****
+make all 
+Building file: ../src/timer.c
+Invoking: MCU GCC Compiler
+C:\Bennyaw\STM32\test_ceedling\test_ceedling\Debug
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F103xB -I"C:/Bennyaw/STM32/test_ceedling/test_ceedling/Core/Inc" -I"C:/Bennyaw/STM32/test_ceedling/test_ceedling/src" -I"C:/Bennyaw/STM32/test_ceedling/test_ceedling/Drivers/STM32F1xx_HAL_Driver/Inc" -I"C:/Bennyaw/STM32/test_ceedling/test_ceedling/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy" -I"C:/Bennyaw/STM32/test_ceedling/test_ceedling/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"C:/Bennyaw/STM32/test_ceedling/test_ceedling/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"src/timer.d" -MT"src/timer.o" -o "src/timer.o" "../src/timer.c"
+../src/timer.c: In function 'clk_int_peiord':
+../src/timer.c:9:8: warning: unused variable 'test_val' [-Wunused-variable]
+  float test_val = ((float)1/(float)HAL_RCC_GetHCLKFreq)*pow(10,9);
+        ^~~~~~~~
+../src/timer.c: In function 'setDeadTime':
+../src/timer.c:40:2: warning: 'return' with no value, in function returning non-void
+  return ;
+  ^~~~~~
+../src/timer.c:37:5: note: declared here
+ int setDeadTime(uint32_t deadTime_ns){
+     ^~~~~~~~~~~
+../src/timer.c:39:6: warning: unused variable 'period_clk_base' [-Wunused-variable]
+  int period_clk_base = 1/clk_int;
+      ^~~~~~~~~~~~~~~
+Finished building: ../src/timer.c
+ 
+Building target: test_ceedling.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft -specs=nosys.specs -specs=nano.specs -T"../STM32F103C8Tx_FLASH.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "test_ceedling.elf" @"objects.list"   -lm
+Finished building target: test_ceedling.elf
+ 
+make --no-print-directory post-build
+Generating hex and Printing size information:
+arm-none-eabi-objcopy -O ihex "test_ceedling.elf" "test_ceedling.hex"
+arm-none-eabi-size "test_ceedling.elf"
+   text	   data	    bss	    dec	    hex	filename
+    648	     16	   1568	   2232	    8b8	test_ceedling.elf
+ 
+02:37:03 **** Incremental Build of configuration Debug for project test_ceedling ****
+make all 
+Building file: ../src/timer.c
+Invoking: MCU GCC Compiler
+C:\Bennyaw\STM32\test_ceedling\test_ceedling\Debug
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F103xB -I"C:/Bennyaw/STM32/test_ceedling/test_ceedling/Core/Inc" -I"C:/Bennyaw/STM32/test_ceedling/test_ceedling/src" -I"C:/Bennyaw/STM32/test_ceedling/test_ceedling/Drivers/STM32F1xx_HAL_Driver/Inc" -I"C:/Bennyaw/STM32/test_ceedling/test_ceedling/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy" -I"C:/Bennyaw/STM32/test_ceedling/test_ceedling/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"C:/Bennyaw/STM32/test_ceedling/test_ceedling/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"src/timer.d" -MT"src/timer.o" -o "src/timer.o" "../src/timer.c"
+../src/timer.c: In function 'clk_int_peiord':
+../src/timer.c:9:8: warning: unused variable 'test_val' [-Wunused-variable]
+  float test_val = ((float)1/(float)HAL_RCC_GetHCLKFreq)*pow(10,9);
+        ^~~~~~~~
+../src/timer.c: In function 'setDeadTime':
+../src/timer.c:40:2: warning: 'return' with no value, in function returning non-void
+  return ;
+  ^~~~~~
+../src/timer.c:37:5: note: declared here
+ int setDeadTime(uint32_t deadTime_ns){
+     ^~~~~~~~~~~
+../src/timer.c:39:6: warning: unused variable 'period_clk_base' [-Wunused-variable]
+  int period_clk_base = 1/clk_int;
+      ^~~~~~~~~~~~~~~
+Finished building: ../src/timer.c
+ 
+Building target: test_ceedling.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft -specs=nosys.specs -specs=nano.specs -T"../STM32F103C8Tx_FLASH.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "test_ceedling.elf" @"objects.list"   -lm
+Finished building target: test_ceedling.elf
+ 
+make --no-print-directory post-build
+Generating hex and Printing size information:
+arm-none-eabi-objcopy -O ihex "test_ceedling.elf" "test_ceedling.hex"
+arm-none-eabi-size "test_ceedling.elf"
+   text	   data	    bss	    dec	    hex	filename
+    648	     16	   1568	   2232	    8b8	test_ceedling.elf
+ 
+02:37:18 **** Incremental Build of configuration Debug for project test_ceedling ****
+make all 
+make: Nothing to be done for 'all'.
+02:37:32 **** Incremental Build of configuration Debug for project test_ceedling ****
+make all 
+make: Nothing to be done for 'all'.
+02:37:38 **** Incremental Build of configuration Debug for project test_ceedling ****
+make all 
+make: Nothing to be done for 'all'.
+02:38:36 **** Incremental Build of configuration Debug for project test_ceedling ****
+make all 
+make: Nothing to be done for 'all'.
+02:39:42 **** Incremental Build of configuration Debug for project test_ceedling ****
+make all 
+Building file: ../src/timer.c
+Invoking: MCU GCC Compiler
+C:\Bennyaw\STM32\test_ceedling\test_ceedling\Debug
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F103xB -I"C:/Bennyaw/STM32/test_ceedling/test_ceedling/Core/Inc" -I"C:/Bennyaw/STM32/test_ceedling/test_ceedling/src" -I"C:/Bennyaw/STM32/test_ceedling/test_ceedling/Drivers/STM32F1xx_HAL_Driver/Inc" -I"C:/Bennyaw/STM32/test_ceedling/test_ceedling/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy" -I"C:/Bennyaw/STM32/test_ceedling/test_ceedling/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"C:/Bennyaw/STM32/test_ceedling/test_ceedling/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"src/timer.d" -MT"src/timer.o" -o "src/timer.o" "../src/timer.c"
+../src/timer.c: In function 'setDeadTime':
+../src/timer.c:40:2: warning: 'return' with no value, in function returning non-void
+  return ;
+  ^~~~~~
+../src/timer.c:37:5: note: declared here
+ int setDeadTime(uint32_t deadTime_ns){
+     ^~~~~~~~~~~
+../src/timer.c:39:6: warning: unused variable 'period_clk_base' [-Wunused-variable]
+  int period_clk_base = 1/clk_int;
+      ^~~~~~~~~~~~~~~
+Finished building: ../src/timer.c
+ 
+Building target: test_ceedling.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft -specs=nosys.specs -specs=nano.specs -T"../STM32F103C8Tx_FLASH.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "test_ceedling.elf" @"objects.list"   -lm
+Finished building target: test_ceedling.elf
+ 
+make --no-print-directory post-build
+Generating hex and Printing size information:
+arm-none-eabi-objcopy -O ihex "test_ceedling.elf" "test_ceedling.hex"
+arm-none-eabi-size "test_ceedling.elf"
+   text	   data	    bss	    dec	    hex	filename
+    648	     16	   1568	   2232	    8b8	test_ceedling.elf
+ 
+02:40:36 **** Incremental Build of configuration Debug for project test_ceedling ****
+make all 
+Building file: ../src/timer.c
+Invoking: MCU GCC Compiler
+C:\Bennyaw\STM32\test_ceedling\test_ceedling\Debug
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F103xB -I"C:/Bennyaw/STM32/test_ceedling/test_ceedling/Core/Inc" -I"C:/Bennyaw/STM32/test_ceedling/test_ceedling/src" -I"C:/Bennyaw/STM32/test_ceedling/test_ceedling/Drivers/STM32F1xx_HAL_Driver/Inc" -I"C:/Bennyaw/STM32/test_ceedling/test_ceedling/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy" -I"C:/Bennyaw/STM32/test_ceedling/test_ceedling/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"C:/Bennyaw/STM32/test_ceedling/test_ceedling/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"src/timer.d" -MT"src/timer.o" -o "src/timer.o" "../src/timer.c"
+../src/timer.c: In function 'setDeadTime':
+../src/timer.c:40:2: warning: 'return' with no value, in function returning non-void
+  return ;
+  ^~~~~~
+../src/timer.c:37:5: note: declared here
+ int setDeadTime(uint32_t deadTime_ns){
+     ^~~~~~~~~~~
+../src/timer.c:39:6: warning: unused variable 'period_clk_base' [-Wunused-variable]
+  int period_clk_base = 1/clk_int;
+      ^~~~~~~~~~~~~~~
+Finished building: ../src/timer.c
+ 
+Building target: test_ceedling.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft -specs=nosys.specs -specs=nano.specs -T"../STM32F103C8Tx_FLASH.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "test_ceedling.elf" @"objects.list"   -lm
+Finished building target: test_ceedling.elf
+ 
+make --no-print-directory post-build
+Generating hex and Printing size information:
+arm-none-eabi-objcopy -O ihex "test_ceedling.elf" "test_ceedling.hex"
+arm-none-eabi-size "test_ceedling.elf"
+   text	   data	    bss	    dec	    hex	filename
+    648	     16	   1568	   2232	    8b8	test_ceedling.elf
+ 
+02:41:13 **** Incremental Build of configuration Debug for project test_ceedling ****
+make all 
+Building file: ../src/timer.c
+Invoking: MCU GCC Compiler
+C:\Bennyaw\STM32\test_ceedling\test_ceedling\Debug
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F103xB -I"C:/Bennyaw/STM32/test_ceedling/test_ceedling/Core/Inc" -I"C:/Bennyaw/STM32/test_ceedling/test_ceedling/src" -I"C:/Bennyaw/STM32/test_ceedling/test_ceedling/Drivers/STM32F1xx_HAL_Driver/Inc" -I"C:/Bennyaw/STM32/test_ceedling/test_ceedling/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy" -I"C:/Bennyaw/STM32/test_ceedling/test_ceedling/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"C:/Bennyaw/STM32/test_ceedling/test_ceedling/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"src/timer.d" -MT"src/timer.o" -o "src/timer.o" "../src/timer.c"
+../src/timer.c: In function 'clk_int_peiord':
+../src/timer.c:10:13: warning: format '%u' expects argument of type 'unsigned int', but argument 2 has type 'double' [-Wformat=]
+  printf("%.9u, period = %.9u",((float)1/(float)HAL_RCC_GetHCLKFreq),period);
+          ~~~^
+          %.9f
+../src/timer.c:10:28: warning: format '%u' expects argument of type 'unsigned int', but argument 3 has type 'double' [-Wformat=]
+  printf("%.9u, period = %.9u",((float)1/(float)HAL_RCC_GetHCLKFreq),period);
+                         ~~~^
+                         %.9f
+../src/timer.c: In function 'setDeadTime':
+../src/timer.c:40:2: warning: 'return' with no value, in function returning non-void
+  return ;
+  ^~~~~~
+../src/timer.c:37:5: note: declared here
+ int setDeadTime(uint32_t deadTime_ns){
+     ^~~~~~~~~~~
+../src/timer.c:39:6: warning: unused variable 'period_clk_base' [-Wunused-variable]
+  int period_clk_base = 1/clk_int;
+      ^~~~~~~~~~~~~~~
+Finished building: ../src/timer.c
+ 
+Building target: test_ceedling.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft -specs=nosys.specs -specs=nano.specs -T"../STM32F103C8Tx_FLASH.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "test_ceedling.elf" @"objects.list"   -lm
+Finished building target: test_ceedling.elf
+ 
+make --no-print-directory post-build
+Generating hex and Printing size information:
+arm-none-eabi-objcopy -O ihex "test_ceedling.elf" "test_ceedling.hex"
+arm-none-eabi-size "test_ceedling.elf"
+   text	   data	    bss	    dec	    hex	filename
+    648	     16	   1568	   2232	    8b8	test_ceedling.elf
+ 
+02:41:51 **** Incremental Build of configuration Debug for project test_ceedling ****
+make all 
+Building file: ../src/timer.c
+Invoking: MCU GCC Compiler
+C:\Bennyaw\STM32\test_ceedling\test_ceedling\Debug
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F103xB -I"C:/Bennyaw/STM32/test_ceedling/test_ceedling/Core/Inc" -I"C:/Bennyaw/STM32/test_ceedling/test_ceedling/src" -I"C:/Bennyaw/STM32/test_ceedling/test_ceedling/Drivers/STM32F1xx_HAL_Driver/Inc" -I"C:/Bennyaw/STM32/test_ceedling/test_ceedling/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy" -I"C:/Bennyaw/STM32/test_ceedling/test_ceedling/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"C:/Bennyaw/STM32/test_ceedling/test_ceedling/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"src/timer.d" -MT"src/timer.o" -o "src/timer.o" "../src/timer.c"
+../src/timer.c: In function 'setDeadTime':
+../src/timer.c:40:2: warning: 'return' with no value, in function returning non-void
+  return ;
+  ^~~~~~
+../src/timer.c:37:5: note: declared here
+ int setDeadTime(uint32_t deadTime_ns){
+     ^~~~~~~~~~~
+../src/timer.c:39:6: warning: unused variable 'period_clk_base' [-Wunused-variable]
+  int period_clk_base = 1/clk_int;
+      ^~~~~~~~~~~~~~~
+Finished building: ../src/timer.c
+ 
+Building target: test_ceedling.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft -specs=nosys.specs -specs=nano.specs -T"../STM32F103C8Tx_FLASH.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "test_ceedling.elf" @"objects.list"   -lm
+Finished building target: test_ceedling.elf
+ 
+make --no-print-directory post-build
+Generating hex and Printing size information:
+arm-none-eabi-objcopy -O ihex "test_ceedling.elf" "test_ceedling.hex"
+arm-none-eabi-size "test_ceedling.elf"
+   text	   data	    bss	    dec	    hex	filename
+    648	     16	   1568	   2232	    8b8	test_ceedling.elf
+ 
+02:42:20 **** Incremental Build of configuration Debug for project test_ceedling ****
+make all 
+Building file: ../src/timer.c
+Invoking: MCU GCC Compiler
+C:\Bennyaw\STM32\test_ceedling\test_ceedling\Debug
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F103xB -I"C:/Bennyaw/STM32/test_ceedling/test_ceedling/Core/Inc" -I"C:/Bennyaw/STM32/test_ceedling/test_ceedling/src" -I"C:/Bennyaw/STM32/test_ceedling/test_ceedling/Drivers/STM32F1xx_HAL_Driver/Inc" -I"C:/Bennyaw/STM32/test_ceedling/test_ceedling/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy" -I"C:/Bennyaw/STM32/test_ceedling/test_ceedling/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"C:/Bennyaw/STM32/test_ceedling/test_ceedling/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"src/timer.d" -MT"src/timer.o" -o "src/timer.o" "../src/timer.c"
+../src/timer.c: In function 'setDeadTime':
+../src/timer.c:40:2: warning: 'return' with no value, in function returning non-void
+  return ;
+  ^~~~~~
+../src/timer.c:37:5: note: declared here
+ int setDeadTime(uint32_t deadTime_ns){
+     ^~~~~~~~~~~
+../src/timer.c:39:6: warning: unused variable 'period_clk_base' [-Wunused-variable]
+  int period_clk_base = 1/clk_int;
+      ^~~~~~~~~~~~~~~
+Finished building: ../src/timer.c
+ 
+Building target: test_ceedling.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft -specs=nosys.specs -specs=nano.specs -T"../STM32F103C8Tx_FLASH.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "test_ceedling.elf" @"objects.list"   -lm
+Finished building target: test_ceedling.elf
+ 
+make --no-print-directory post-build
+Generating hex and Printing size information:
+arm-none-eabi-objcopy -O ihex "test_ceedling.elf" "test_ceedling.hex"
+arm-none-eabi-size "test_ceedling.elf"
+   text	   data	    bss	    dec	    hex	filename
+    648	     16	   1568	   2232	    8b8	test_ceedling.elf
+ 
+02:42:52 **** Incremental Build of configuration Debug for project test_ceedling ****
+make all 
+Building file: ../src/timer.c
+Invoking: MCU GCC Compiler
+C:\Bennyaw\STM32\test_ceedling\test_ceedling\Debug
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F103xB -I"C:/Bennyaw/STM32/test_ceedling/test_ceedling/Core/Inc" -I"C:/Bennyaw/STM32/test_ceedling/test_ceedling/src" -I"C:/Bennyaw/STM32/test_ceedling/test_ceedling/Drivers/STM32F1xx_HAL_Driver/Inc" -I"C:/Bennyaw/STM32/test_ceedling/test_ceedling/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy" -I"C:/Bennyaw/STM32/test_ceedling/test_ceedling/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"C:/Bennyaw/STM32/test_ceedling/test_ceedling/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"src/timer.d" -MT"src/timer.o" -o "src/timer.o" "../src/timer.c"
+../src/timer.c: In function 'setDeadTime':
+../src/timer.c:39:6: warning: unused variable 'period_clk_base' [-Wunused-variable]
+  int period_clk_base = 1/clk_int;
+      ^~~~~~~~~~~~~~~
+Finished building: ../src/timer.c
+ 
+Building target: test_ceedling.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft -specs=nosys.specs -specs=nano.specs -T"../STM32F103C8Tx_FLASH.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "test_ceedling.elf" @"objects.list"   -lm
+Finished building target: test_ceedling.elf
+ 
+make --no-print-directory post-build
+Generating hex and Printing size information:
+arm-none-eabi-objcopy -O ihex "test_ceedling.elf" "test_ceedling.hex"
+arm-none-eabi-size "test_ceedling.elf"
+   text	   data	    bss	    dec	    hex	filename
+    648	     16	   1568	   2232	    8b8	test_ceedling.elf
+ 
+02:43:34 **** Incremental Build of configuration Debug for project test_ceedling ****
+make all 
+Building file: ../src/timer.c
+Invoking: MCU GCC Compiler
+C:\Bennyaw\STM32\test_ceedling\test_ceedling\Debug
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F103xB -I"C:/Bennyaw/STM32/test_ceedling/test_ceedling/Core/Inc" -I"C:/Bennyaw/STM32/test_ceedling/test_ceedling/src" -I"C:/Bennyaw/STM32/test_ceedling/test_ceedling/Drivers/STM32F1xx_HAL_Driver/Inc" -I"C:/Bennyaw/STM32/test_ceedling/test_ceedling/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy" -I"C:/Bennyaw/STM32/test_ceedling/test_ceedling/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"C:/Bennyaw/STM32/test_ceedling/test_ceedling/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"src/timer.d" -MT"src/timer.o" -o "src/timer.o" "../src/timer.c"
+../src/timer.c: In function 'setDeadTime':
+../src/timer.c:39:6: warning: unused variable 'period_clk_base' [-Wunused-variable]
+  int period_clk_base = 1/clk_int;
+      ^~~~~~~~~~~~~~~
+Finished building: ../src/timer.c
+ 
+Building target: test_ceedling.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft -specs=nosys.specs -specs=nano.specs -T"../STM32F103C8Tx_FLASH.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "test_ceedling.elf" @"objects.list"   -lm
+Finished building target: test_ceedling.elf
+ 
+make --no-print-directory post-build
+Generating hex and Printing size information:
+arm-none-eabi-objcopy -O ihex "test_ceedling.elf" "test_ceedling.hex"
+arm-none-eabi-size "test_ceedling.elf"
+   text	   data	    bss	    dec	    hex	filename
+    648	     16	   1568	   2232	    8b8	test_ceedling.elf
+ 
+02:43:44 **** Incremental Build of configuration Debug for project test_ceedling ****
+make all 
+make: Nothing to be done for 'all'.
+02:44:01 **** Incremental Build of configuration Debug for project test_ceedling ****
+make all 
+Building file: ../src/timer.c
+Invoking: MCU GCC Compiler
+C:\Bennyaw\STM32\test_ceedling\test_ceedling\Debug
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F103xB -I"C:/Bennyaw/STM32/test_ceedling/test_ceedling/Core/Inc" -I"C:/Bennyaw/STM32/test_ceedling/test_ceedling/src" -I"C:/Bennyaw/STM32/test_ceedling/test_ceedling/Drivers/STM32F1xx_HAL_Driver/Inc" -I"C:/Bennyaw/STM32/test_ceedling/test_ceedling/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy" -I"C:/Bennyaw/STM32/test_ceedling/test_ceedling/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"C:/Bennyaw/STM32/test_ceedling/test_ceedling/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"src/timer.d" -MT"src/timer.o" -o "src/timer.o" "../src/timer.c"
+../src/timer.c: In function 'setDeadTime':
+../src/timer.c:39:6: warning: unused variable 'period_clk_base' [-Wunused-variable]
+  int period_clk_base = 1/clk_int;
+      ^~~~~~~~~~~~~~~
+Finished building: ../src/timer.c
+ 
+Building target: test_ceedling.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft -specs=nosys.specs -specs=nano.specs -T"../STM32F103C8Tx_FLASH.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "test_ceedling.elf" @"objects.list"   -lm
+Finished building target: test_ceedling.elf
+ 
+make --no-print-directory post-build
+Generating hex and Printing size information:
+arm-none-eabi-objcopy -O ihex "test_ceedling.elf" "test_ceedling.hex"
+arm-none-eabi-size "test_ceedling.elf"
+   text	   data	    bss	    dec	    hex	filename
+    648	     16	   1568	   2232	    8b8	test_ceedling.elf
+ 
+02:44:37 **** Incremental Build of configuration Debug for project test_ceedling ****
+make all 
+Building file: ../src/timer.c
+Invoking: MCU GCC Compiler
+C:\Bennyaw\STM32\test_ceedling\test_ceedling\Debug
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F103xB -I"C:/Bennyaw/STM32/test_ceedling/test_ceedling/Core/Inc" -I"C:/Bennyaw/STM32/test_ceedling/test_ceedling/src" -I"C:/Bennyaw/STM32/test_ceedling/test_ceedling/Drivers/STM32F1xx_HAL_Driver/Inc" -I"C:/Bennyaw/STM32/test_ceedling/test_ceedling/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy" -I"C:/Bennyaw/STM32/test_ceedling/test_ceedling/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"C:/Bennyaw/STM32/test_ceedling/test_ceedling/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"src/timer.d" -MT"src/timer.o" -o "src/timer.o" "../src/timer.c"
+../src/timer.c: In function 'setDeadTime':
+../src/timer.c:37:6: warning: unused variable 'period_clk_base' [-Wunused-variable]
+  int period_clk_base = 1/clk_int;
+      ^~~~~~~~~~~~~~~
+Finished building: ../src/timer.c
+ 
+Building target: test_ceedling.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft -specs=nosys.specs -specs=nano.specs -T"../STM32F103C8Tx_FLASH.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "test_ceedling.elf" @"objects.list"   -lm
+Finished building target: test_ceedling.elf
+ 
+make --no-print-directory post-build
+Generating hex and Printing size information:
+arm-none-eabi-objcopy -O ihex "test_ceedling.elf" "test_ceedling.hex"
+arm-none-eabi-size "test_ceedling.elf"
+   text	   data	    bss	    dec	    hex	filename
+    648	     16	   1568	   2232	    8b8	test_ceedling.elf
+ 
+02:46:10 **** Incremental Build of configuration Debug for project test_ceedling ****
+make all 
+make: Nothing to be done for 'all'.
+02:48:06 **** Incremental Build of configuration Debug for project test_ceedling ****
+make all 
+make: Nothing to be done for 'all'.
+01:28:28 **** Incremental Build of configuration Debug for project test_ceedling ****
+make all 
+make: Nothing to be done for 'all'.
+01:32:46 **** Incremental Build of configuration Debug for project test_ceedling ****
+make all 
+make: Nothing to be done for 'all'.
+01:39:01 **** Incremental Build of configuration Debug for project test_ceedling ****
+make all 
+make: Nothing to be done for 'all'.
+01:39:20 **** Incremental Build of configuration Debug for project test_ceedling ****
+make all 
+make: Nothing to be done for 'all'.
+01:41:38 **** Incremental Build of configuration Debug for project test_ceedling ****
+make all 
+Building file: ../src/timer.c
+Invoking: MCU GCC Compiler
+C:\Bennyaw\STM32\test_ceedling\test_ceedling\Debug
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F103xB -I"C:/Bennyaw/STM32/test_ceedling/test_ceedling/Core/Inc" -I"C:/Bennyaw/STM32/test_ceedling/test_ceedling/src" -I"C:/Bennyaw/STM32/test_ceedling/test_ceedling/Drivers/STM32F1xx_HAL_Driver/Inc" -I"C:/Bennyaw/STM32/test_ceedling/test_ceedling/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy" -I"C:/Bennyaw/STM32/test_ceedling/test_ceedling/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"C:/Bennyaw/STM32/test_ceedling/test_ceedling/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"src/timer.d" -MT"src/timer.o" -o "src/timer.o" "../src/timer.c"
+../src/timer.c: In function 'setDeadTime':
+../src/timer.c:37:6: warning: unused variable 'period_clk_base' [-Wunused-variable]
+  int period_clk_base = 1/clk_int;
+      ^~~~~~~~~~~~~~~
+Finished building: ../src/timer.c
+ 
+Building target: test_ceedling.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft -specs=nosys.specs -specs=nano.specs -T"../STM32F103C8Tx_FLASH.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "test_ceedling.elf" @"objects.list"   -lm
+Finished building target: test_ceedling.elf
+ 
+make --no-print-directory post-build
+Generating hex and Printing size information:
+arm-none-eabi-objcopy -O ihex "test_ceedling.elf" "test_ceedling.hex"
+arm-none-eabi-size "test_ceedling.elf"
+   text	   data	    bss	    dec	    hex	filename
+    648	     16	   1568	   2232	    8b8	test_ceedling.elf
+ 
+01:50:31 **** Incremental Build of configuration Debug for project test_ceedling ****
+make all 
+Building file: ../src/timer.c
+Invoking: MCU GCC Compiler
+C:\Bennyaw\STM32\test_ceedling\test_ceedling\Debug
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F103xB -I"C:/Bennyaw/STM32/test_ceedling/test_ceedling/Core/Inc" -I"C:/Bennyaw/STM32/test_ceedling/test_ceedling/src" -I"C:/Bennyaw/STM32/test_ceedling/test_ceedling/Drivers/STM32F1xx_HAL_Driver/Inc" -I"C:/Bennyaw/STM32/test_ceedling/test_ceedling/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy" -I"C:/Bennyaw/STM32/test_ceedling/test_ceedling/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"C:/Bennyaw/STM32/test_ceedling/test_ceedling/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"src/timer.d" -MT"src/timer.o" -o "src/timer.o" "../src/timer.c"
+../src/timer.c: In function 'setDeadTime':
+../src/timer.c:37:6: warning: unused variable 'period_clk_base' [-Wunused-variable]
+  int period_clk_base = 1/clk_int;
+      ^~~~~~~~~~~~~~~
+Finished building: ../src/timer.c
+ 
+Building target: test_ceedling.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft -specs=nosys.specs -specs=nano.specs -T"../STM32F103C8Tx_FLASH.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "test_ceedling.elf" @"objects.list"   -lm
+Finished building target: test_ceedling.elf
+ 
+make --no-print-directory post-build
+Generating hex and Printing size information:
+arm-none-eabi-objcopy -O ihex "test_ceedling.elf" "test_ceedling.hex"
+arm-none-eabi-size "test_ceedling.elf"
+   text	   data	    bss	    dec	    hex	filename
+    648	     16	   1568	   2232	    8b8	test_ceedling.elf
+ 
+01:51:48 **** Incremental Build of configuration Debug for project test_ceedling ****
+make all 
+Building file: ../src/timer.c
+Invoking: MCU GCC Compiler
+C:\Bennyaw\STM32\test_ceedling\test_ceedling\Debug
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F103xB -I"C:/Bennyaw/STM32/test_ceedling/test_ceedling/Core/Inc" -I"C:/Bennyaw/STM32/test_ceedling/test_ceedling/src" -I"C:/Bennyaw/STM32/test_ceedling/test_ceedling/Drivers/STM32F1xx_HAL_Driver/Inc" -I"C:/Bennyaw/STM32/test_ceedling/test_ceedling/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy" -I"C:/Bennyaw/STM32/test_ceedling/test_ceedling/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"C:/Bennyaw/STM32/test_ceedling/test_ceedling/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"src/timer.d" -MT"src/timer.o" -o "src/timer.o" "../src/timer.c"
+../src/timer.c: In function 'setDeadTime':
+../src/timer.c:37:6: warning: unused variable 'period_clk_base' [-Wunused-variable]
+  int period_clk_base = 1/clk_int;
+      ^~~~~~~~~~~~~~~
+Finished building: ../src/timer.c
+ 
+Building target: test_ceedling.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft -specs=nosys.specs -specs=nano.specs -T"../STM32F103C8Tx_FLASH.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "test_ceedling.elf" @"objects.list"   -lm
+Finished building target: test_ceedling.elf
+ 
+make --no-print-directory post-build
+Generating hex and Printing size information:
+arm-none-eabi-objcopy -O ihex "test_ceedling.elf" "test_ceedling.hex"
+arm-none-eabi-size "test_ceedling.elf"
+   text	   data	    bss	    dec	    hex	filename
+    648	     16	   1568	   2232	    8b8	test_ceedling.elf
+ 
+01:53:13 **** Incremental Build of configuration Debug for project test_ceedling ****
+make all 
+make: Nothing to be done for 'all'.
+01:56:47 **** Incremental Build of configuration Debug for project test_ceedling ****
+make all 
+Building file: ../src/timer.c
+Invoking: MCU GCC Compiler
+C:\Bennyaw\STM32\test_ceedling\test_ceedling\Debug
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F103xB -I"C:/Bennyaw/STM32/test_ceedling/test_ceedling/Core/Inc" -I"C:/Bennyaw/STM32/test_ceedling/test_ceedling/src" -I"C:/Bennyaw/STM32/test_ceedling/test_ceedling/Drivers/STM32F1xx_HAL_Driver/Inc" -I"C:/Bennyaw/STM32/test_ceedling/test_ceedling/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy" -I"C:/Bennyaw/STM32/test_ceedling/test_ceedling/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"C:/Bennyaw/STM32/test_ceedling/test_ceedling/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"src/timer.d" -MT"src/timer.o" -o "src/timer.o" "../src/timer.c"
+../src/timer.c: In function 'setDeadTime':
+../src/timer.c:37:6: warning: unused variable 'period_clk_base' [-Wunused-variable]
+  int period_clk_base = 1/clk_int;
+      ^~~~~~~~~~~~~~~
+Finished building: ../src/timer.c
+ 
+Building target: test_ceedling.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft -specs=nosys.specs -specs=nano.specs -T"../STM32F103C8Tx_FLASH.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "test_ceedling.elf" @"objects.list"   -lm
+Finished building target: test_ceedling.elf
+ 
+make --no-print-directory post-build
+Generating hex and Printing size information:
+arm-none-eabi-objcopy -O ihex "test_ceedling.elf" "test_ceedling.hex"
+arm-none-eabi-size "test_ceedling.elf"
+   text	   data	    bss	    dec	    hex	filename
+    648	     16	   1568	   2232	    8b8	test_ceedling.elf
+ 
+01:57:11 **** Incremental Build of configuration Debug for project test_ceedling ****
+make all 
+make: Nothing to be done for 'all'.
+01:58:41 **** Incremental Build of configuration Debug for project test_ceedling ****
+make all 
+make: Nothing to be done for 'all'.
+02:01:02 **** Incremental Build of configuration Debug for project test_ceedling ****
+make all 
+make: Nothing to be done for 'all'.
+02:02:12 **** Incremental Build of configuration Debug for project test_ceedling ****
+make all 
+make: Nothing to be done for 'all'.
+02:04:17 **** Incremental Build of configuration Debug for project test_ceedling ****
+make all 
+make: Nothing to be done for 'all'.
+02:04:59 **** Incremental Build of configuration Debug for project test_ceedling ****
+make all 
+make: Nothing to be done for 'all'.
+02:06:16 **** Incremental Build of configuration Debug for project test_ceedling ****
+make all 
+make: Nothing to be done for 'all'.
+02:07:38 **** Incremental Build of configuration Debug for project test_ceedling ****
+make all 
+make: Nothing to be done for 'all'.
+02:10:53 **** Incremental Build of configuration Debug for project test_ceedling ****
+make all 
+Building file: ../src/timer.c
+Invoking: MCU GCC Compiler
+C:\Bennyaw\STM32\test_ceedling\test_ceedling\Debug
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F103xB -I"C:/Bennyaw/STM32/test_ceedling/test_ceedling/Core/Inc" -I"C:/Bennyaw/STM32/test_ceedling/test_ceedling/src" -I"C:/Bennyaw/STM32/test_ceedling/test_ceedling/Drivers/STM32F1xx_HAL_Driver/Inc" -I"C:/Bennyaw/STM32/test_ceedling/test_ceedling/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy" -I"C:/Bennyaw/STM32/test_ceedling/test_ceedling/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"C:/Bennyaw/STM32/test_ceedling/test_ceedling/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"src/timer.d" -MT"src/timer.o" -o "src/timer.o" "../src/timer.c"
+../src/timer.c: In function 'setDeadTime':
+../src/timer.c:37:6: warning: unused variable 'period_clk_base' [-Wunused-variable]
+  int period_clk_base = 1/clk_int;
+      ^~~~~~~~~~~~~~~
+Finished building: ../src/timer.c
+ 
+Building target: test_ceedling.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft -specs=nosys.specs -specs=nano.specs -T"../STM32F103C8Tx_FLASH.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "test_ceedling.elf" @"objects.list"   -lm
+Finished building target: test_ceedling.elf
+ 
+make --no-print-directory post-build
+Generating hex and Printing size information:
+arm-none-eabi-objcopy -O ihex "test_ceedling.elf" "test_ceedling.hex"
+arm-none-eabi-size "test_ceedling.elf"
+   text	   data	    bss	    dec	    hex	filename
+    648	     16	   1568	   2232	    8b8	test_ceedling.elf
+ 
+02:11:59 **** Incremental Build of configuration Debug for project test_ceedling ****
+make all 
+make: Nothing to be done for 'all'.
+02:12:53 **** Incremental Build of configuration Debug for project test_ceedling ****
+make all 
+make: Nothing to be done for 'all'.
+02:13:27 **** Incremental Build of configuration Debug for project test_ceedling ****
+make all 
+make: Nothing to be done for 'all'.
+02:13:55 **** Incremental Build of configuration Debug for project test_ceedling ****
+make all 
+make: Nothing to be done for 'all'.
+02:16:19 **** Incremental Build of configuration Debug for project test_ceedling ****
+make all 
+Building file: ../src/timer.c
+Invoking: MCU GCC Compiler
+C:\Bennyaw\STM32\test_ceedling\test_ceedling\Debug
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F103xB -I"C:/Bennyaw/STM32/test_ceedling/test_ceedling/Core/Inc" -I"C:/Bennyaw/STM32/test_ceedling/test_ceedling/src" -I"C:/Bennyaw/STM32/test_ceedling/test_ceedling/Drivers/STM32F1xx_HAL_Driver/Inc" -I"C:/Bennyaw/STM32/test_ceedling/test_ceedling/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy" -I"C:/Bennyaw/STM32/test_ceedling/test_ceedling/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"C:/Bennyaw/STM32/test_ceedling/test_ceedling/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"src/timer.d" -MT"src/timer.o" -o "src/timer.o" "../src/timer.c"
+../src/timer.c: In function 'setDeadTime':
+../src/timer.c:37:6: warning: unused variable 'period_clk_base' [-Wunused-variable]
+  int period_clk_base = 1/clk_int;
+      ^~~~~~~~~~~~~~~
+Finished building: ../src/timer.c
+ 
+Building target: test_ceedling.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft -specs=nosys.specs -specs=nano.specs -T"../STM32F103C8Tx_FLASH.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "test_ceedling.elf" @"objects.list"   -lm
+Finished building target: test_ceedling.elf
+ 
+make --no-print-directory post-build
+Generating hex and Printing size information:
+arm-none-eabi-objcopy -O ihex "test_ceedling.elf" "test_ceedling.hex"
+arm-none-eabi-size "test_ceedling.elf"
+   text	   data	    bss	    dec	    hex	filename
+    648	     16	   1568	   2232	    8b8	test_ceedling.elf
+ 
+02:18:41 **** Incremental Build of configuration Debug for project test_ceedling ****
+make all 
+Building file: ../src/timer.c
+Invoking: MCU GCC Compiler
+C:\Bennyaw\STM32\test_ceedling\test_ceedling\Debug
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F103xB -I"C:/Bennyaw/STM32/test_ceedling/test_ceedling/Core/Inc" -I"C:/Bennyaw/STM32/test_ceedling/test_ceedling/src" -I"C:/Bennyaw/STM32/test_ceedling/test_ceedling/Drivers/STM32F1xx_HAL_Driver/Inc" -I"C:/Bennyaw/STM32/test_ceedling/test_ceedling/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy" -I"C:/Bennyaw/STM32/test_ceedling/test_ceedling/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"C:/Bennyaw/STM32/test_ceedling/test_ceedling/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"src/timer.d" -MT"src/timer.o" -o "src/timer.o" "../src/timer.c"
+../src/timer.c: In function 'setDeadTime':
+../src/timer.c:38:10: warning: unused variable 'dtg7to5' [-Wunused-variable]
+  uint8_t dtg7to5 = (uint8_t)getdtgBits7to5(deadTime_ns,period_clk_base);
+          ^~~~~~~
+Finished building: ../src/timer.c
+ 
+Building target: test_ceedling.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft -specs=nosys.specs -specs=nano.specs -T"../STM32F103C8Tx_FLASH.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "test_ceedling.elf" @"objects.list"   -lm
+Finished building target: test_ceedling.elf
+ 
+make --no-print-directory post-build
+Generating hex and Printing size information:
+arm-none-eabi-objcopy -O ihex "test_ceedling.elf" "test_ceedling.hex"
+arm-none-eabi-size "test_ceedling.elf"
+   text	   data	    bss	    dec	    hex	filename
+    648	     16	   1568	   2232	    8b8	test_ceedling.elf
+ 
+02:39:02 **** Incremental Build of configuration Debug for project test_ceedling ****
+make all 
+Building file: ../src/timer.c
+Invoking: MCU GCC Compiler
+C:\Bennyaw\STM32\test_ceedling\test_ceedling\Debug
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F103xB -I"C:/Bennyaw/STM32/test_ceedling/test_ceedling/Core/Inc" -I"C:/Bennyaw/STM32/test_ceedling/test_ceedling/src" -I"C:/Bennyaw/STM32/test_ceedling/test_ceedling/Drivers/STM32F1xx_HAL_Driver/Inc" -I"C:/Bennyaw/STM32/test_ceedling/test_ceedling/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy" -I"C:/Bennyaw/STM32/test_ceedling/test_ceedling/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"C:/Bennyaw/STM32/test_ceedling/test_ceedling/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"src/timer.d" -MT"src/timer.o" -o "src/timer.o" "../src/timer.c"
+../src/timer.c: In function 'setDeadTime':
+../src/timer.c:62:10: warning: unused variable 'dtgMultiplier' [-Wunused-variable]
+  uint8_t dtgMultiplier = (uint8_t)getdtgMultiplier(deadTime_ns,period_clk_base);
+          ^~~~~~~~~~~~~
+Finished building: ../src/timer.c
+ 
+Building target: test_ceedling.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft -specs=nosys.specs -specs=nano.specs -T"../STM32F103C8Tx_FLASH.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "test_ceedling.elf" @"objects.list"   -lm
+Finished building target: test_ceedling.elf
+ 
+make --no-print-directory post-build
+Generating hex and Printing size information:
+arm-none-eabi-objcopy -O ihex "test_ceedling.elf" "test_ceedling.hex"
+arm-none-eabi-size "test_ceedling.elf"
+   text	   data	    bss	    dec	    hex	filename
+    648	     16	   1568	   2232	    8b8	test_ceedling.elf
+ 
+02:40:34 **** Incremental Build of configuration Debug for project test_ceedling ****
+make all 
+Building file: ../src/timer.c
+Invoking: MCU GCC Compiler
+C:\Bennyaw\STM32\test_ceedling\test_ceedling\Debug
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F103xB -I"C:/Bennyaw/STM32/test_ceedling/test_ceedling/Core/Inc" -I"C:/Bennyaw/STM32/test_ceedling/test_ceedling/src" -I"C:/Bennyaw/STM32/test_ceedling/test_ceedling/Drivers/STM32F1xx_HAL_Driver/Inc" -I"C:/Bennyaw/STM32/test_ceedling/test_ceedling/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy" -I"C:/Bennyaw/STM32/test_ceedling/test_ceedling/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"C:/Bennyaw/STM32/test_ceedling/test_ceedling/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"src/timer.d" -MT"src/timer.o" -o "src/timer.o" "../src/timer.c"
+../src/timer.c: In function 'setDeadTime':
+../src/timer.c:61:6: warning: unused variable 'period_clk_base' [-Wunused-variable]
+  int period_clk_base = 1/clk_int;
+      ^~~~~~~~~~~~~~~
+Finished building: ../src/timer.c
+ 
+Building target: test_ceedling.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft -specs=nosys.specs -specs=nano.specs -T"../STM32F103C8Tx_FLASH.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "test_ceedling.elf" @"objects.list"   -lm
+Finished building target: test_ceedling.elf
+ 
+make --no-print-directory post-build
+Generating hex and Printing size information:
+arm-none-eabi-objcopy -O ihex "test_ceedling.elf" "test_ceedling.hex"
+arm-none-eabi-size "test_ceedling.elf"
+   text	   data	    bss	    dec	    hex	filename
+    648	     16	   1568	   2232	    8b8	test_ceedling.elf
+ 
+02:41:44 **** Incremental Build of configuration Debug for project test_ceedling ****
+make all 
+make: Nothing to be done for 'all'.
+02:43:52 **** Incremental Build of configuration Debug for project test_ceedling ****
+make all 
+make: Nothing to be done for 'all'.
+02:45:57 **** Incremental Build of configuration Debug for project test_ceedling ****
+make all 
+make: Nothing to be done for 'all'.
+02:46:29 **** Incremental Build of configuration Debug for project test_ceedling ****
+make all 
+make: Nothing to be done for 'all'.
+02:46:44 **** Incremental Build of configuration Debug for project test_ceedling ****
+make all 
+make: Nothing to be done for 'all'.
+02:48:33 **** Incremental Build of configuration Debug for project test_ceedling ****
+make all 
+Building file: ../src/timer.c
+Invoking: MCU GCC Compiler
+C:\Bennyaw\STM32\test_ceedling\test_ceedling\Debug
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F103xB -I"C:/Bennyaw/STM32/test_ceedling/test_ceedling/Core/Inc" -I"C:/Bennyaw/STM32/test_ceedling/test_ceedling/src" -I"C:/Bennyaw/STM32/test_ceedling/test_ceedling/Drivers/STM32F1xx_HAL_Driver/Inc" -I"C:/Bennyaw/STM32/test_ceedling/test_ceedling/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy" -I"C:/Bennyaw/STM32/test_ceedling/test_ceedling/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"C:/Bennyaw/STM32/test_ceedling/test_ceedling/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"src/timer.d" -MT"src/timer.o" -o "src/timer.o" "../src/timer.c"
+../src/timer.c: In function 'setDeadTime':
+../src/timer.c:61:6: warning: unused variable 'period_clk_base' [-Wunused-variable]
+  int period_clk_base = 1/clk_int;
+      ^~~~~~~~~~~~~~~
+Finished building: ../src/timer.c
+ 
+Building target: test_ceedling.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft -specs=nosys.specs -specs=nano.specs -T"../STM32F103C8Tx_FLASH.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "test_ceedling.elf" @"objects.list"   -lm
+Finished building target: test_ceedling.elf
+ 
+make --no-print-directory post-build
+Generating hex and Printing size information:
+arm-none-eabi-objcopy -O ihex "test_ceedling.elf" "test_ceedling.hex"
+arm-none-eabi-size "test_ceedling.elf"
+   text	   data	    bss	    dec	    hex	filename
+    648	     16	   1568	   2232	    8b8	test_ceedling.elf
+ 
+02:50:03 **** Incremental Build of configuration Debug for project test_ceedling ****
+make all 
+make: Nothing to be done for 'all'.
+02:51:16 **** Incremental Build of configuration Debug for project test_ceedling ****
+make all 
+make: Nothing to be done for 'all'.
+02:51:41 **** Incremental Build of configuration Debug for project test_ceedling ****
+make all 
+make: Nothing to be done for 'all'.
+02:52:02 **** Incremental Build of configuration Debug for project test_ceedling ****
+make all 
+make: Nothing to be done for 'all'.
+02:54:38 **** Incremental Build of configuration Debug for project test_ceedling ****
+make all 
+make: Nothing to be done for 'all'.
+02:56:06 **** Incremental Build of configuration Debug for project test_ceedling ****
+make all 
+make: Nothing to be done for 'all'.
+02:58:34 **** Incremental Build of configuration Debug for project test_ceedling ****
+make all 
+make: Nothing to be done for 'all'.
+03:00:37 **** Incremental Build of configuration Debug for project test_ceedling ****
+make all 
+Building file: ../src/timer.c
+Invoking: MCU GCC Compiler
+C:\Bennyaw\STM32\test_ceedling\test_ceedling\Debug
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F103xB -I"C:/Bennyaw/STM32/test_ceedling/test_ceedling/Core/Inc" -I"C:/Bennyaw/STM32/test_ceedling/test_ceedling/src" -I"C:/Bennyaw/STM32/test_ceedling/test_ceedling/Drivers/STM32F1xx_HAL_Driver/Inc" -I"C:/Bennyaw/STM32/test_ceedling/test_ceedling/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy" -I"C:/Bennyaw/STM32/test_ceedling/test_ceedling/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"C:/Bennyaw/STM32/test_ceedling/test_ceedling/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"src/timer.d" -MT"src/timer.o" -o "src/timer.o" "../src/timer.c"
+../src/timer.c: In function 'setDeadTime':
+../src/timer.c:61:6: warning: unused variable 'period_clk_base' [-Wunused-variable]
+  int period_clk_base = 1/clk_int;
+      ^~~~~~~~~~~~~~~
+Finished building: ../src/timer.c
+ 
+Building target: test_ceedling.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft -specs=nosys.specs -specs=nano.specs -T"../STM32F103C8Tx_FLASH.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "test_ceedling.elf" @"objects.list"   -lm
+Finished building target: test_ceedling.elf
+ 
+make --no-print-directory post-build
+Generating hex and Printing size information:
+arm-none-eabi-objcopy -O ihex "test_ceedling.elf" "test_ceedling.hex"
+arm-none-eabi-size "test_ceedling.elf"
+   text	   data	    bss	    dec	    hex	filename
+    648	     16	   1568	   2232	    8b8	test_ceedling.elf
+ 
+03:01:36 **** Incremental Build of configuration Debug for project test_ceedling ****
+make all 
+make: Nothing to be done for 'all'.
+03:08:24 **** Incremental Build of configuration Debug for project test_ceedling ****
+make all 
+Building file: ../src/timer.c
+Invoking: MCU GCC Compiler
+C:\Bennyaw\STM32\test_ceedling\test_ceedling\Debug
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F103xB -I"C:/Bennyaw/STM32/test_ceedling/test_ceedling/Core/Inc" -I"C:/Bennyaw/STM32/test_ceedling/test_ceedling/src" -I"C:/Bennyaw/STM32/test_ceedling/test_ceedling/Drivers/STM32F1xx_HAL_Driver/Inc" -I"C:/Bennyaw/STM32/test_ceedling/test_ceedling/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy" -I"C:/Bennyaw/STM32/test_ceedling/test_ceedling/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"C:/Bennyaw/STM32/test_ceedling/test_ceedling/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"src/timer.d" -MT"src/timer.o" -o "src/timer.o" "../src/timer.c"
+Finished building: ../src/timer.c
+ 
+Building target: test_ceedling.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft -specs=nosys.specs -specs=nano.specs -T"../STM32F103C8Tx_FLASH.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "test_ceedling.elf" @"objects.list"   -lm
+Finished building target: test_ceedling.elf
+ 
+make --no-print-directory post-build
+Generating hex and Printing size information:
+arm-none-eabi-objcopy -O ihex "test_ceedling.elf" "test_ceedling.hex"
+arm-none-eabi-size "test_ceedling.elf"
+   text	   data	    bss	    dec	    hex	filename
+    648	     16	   1568	   2232	    8b8	test_ceedling.elf
+ 
+03:09:35 **** Incremental Build of configuration Debug for project test_ceedling ****
+make all 
+Building file: ../src/timer.c
+Invoking: MCU GCC Compiler
+C:\Bennyaw\STM32\test_ceedling\test_ceedling\Debug
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F103xB -I"C:/Bennyaw/STM32/test_ceedling/test_ceedling/Core/Inc" -I"C:/Bennyaw/STM32/test_ceedling/test_ceedling/src" -I"C:/Bennyaw/STM32/test_ceedling/test_ceedling/Drivers/STM32F1xx_HAL_Driver/Inc" -I"C:/Bennyaw/STM32/test_ceedling/test_ceedling/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy" -I"C:/Bennyaw/STM32/test_ceedling/test_ceedling/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"C:/Bennyaw/STM32/test_ceedling/test_ceedling/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"src/timer.d" -MT"src/timer.o" -o "src/timer.o" "../src/timer.c"
+Finished building: ../src/timer.c
+ 
+Building target: test_ceedling.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft -specs=nosys.specs -specs=nano.specs -T"../STM32F103C8Tx_FLASH.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "test_ceedling.elf" @"objects.list"   -lm
+Finished building target: test_ceedling.elf
+ 
+make --no-print-directory post-build
+Generating hex and Printing size information:
+arm-none-eabi-objcopy -O ihex "test_ceedling.elf" "test_ceedling.hex"
+arm-none-eabi-size "test_ceedling.elf"
+   text	   data	    bss	    dec	    hex	filename
+    648	     16	   1568	   2232	    8b8	test_ceedling.elf
+ 
+03:10:12 **** Incremental Build of configuration Debug for project test_ceedling ****
+make all 
+make: Nothing to be done for 'all'.
+03:11:05 **** Incremental Build of configuration Debug for project test_ceedling ****
+make all 
+make: Nothing to be done for 'all'.
+03:12:14 **** Incremental Build of configuration Debug for project test_ceedling ****
+make all 
+Building file: ../src/timer.c
+Invoking: MCU GCC Compiler
+C:\Bennyaw\STM32\test_ceedling\test_ceedling\Debug
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F103xB -I"C:/Bennyaw/STM32/test_ceedling/test_ceedling/Core/Inc" -I"C:/Bennyaw/STM32/test_ceedling/test_ceedling/src" -I"C:/Bennyaw/STM32/test_ceedling/test_ceedling/Drivers/STM32F1xx_HAL_Driver/Inc" -I"C:/Bennyaw/STM32/test_ceedling/test_ceedling/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy" -I"C:/Bennyaw/STM32/test_ceedling/test_ceedling/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"C:/Bennyaw/STM32/test_ceedling/test_ceedling/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"src/timer.d" -MT"src/timer.o" -o "src/timer.o" "../src/timer.c"
+Finished building: ../src/timer.c
+ 
+Building target: test_ceedling.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft -specs=nosys.specs -specs=nano.specs -T"../STM32F103C8Tx_FLASH.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "test_ceedling.elf" @"objects.list"   -lm
+Finished building target: test_ceedling.elf
+ 
+make --no-print-directory post-build
+Generating hex and Printing size information:
+arm-none-eabi-objcopy -O ihex "test_ceedling.elf" "test_ceedling.hex"
+arm-none-eabi-size "test_ceedling.elf"
+   text	   data	    bss	    dec	    hex	filename
+    648	     16	   1568	   2232	    8b8	test_ceedling.elf
+ 

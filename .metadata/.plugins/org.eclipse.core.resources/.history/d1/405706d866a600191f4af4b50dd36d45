@@ -1,0 +1,47 @@
+#include "unity.h"
+#include "timer.h"
+
+
+
+void setUp(void)
+{
+}
+
+void tearDown(void)
+{
+}
+
+void test_timer_clk_int_Freq_freq_8MHz_expect_125_ns(void)
+{
+    int i = clk_int_peiord();
+
+    TEST_ASSERT_EQUAL(31,i);
+}
+
+
+void test_getdtgBits7to5_deadtime_is_3000ns_expect_return_0(void){
+	int clk_int = HAL_RCC_GetHCLKFreq;
+	int deadtime_ns = 3000;
+	uint8_t result = getdtgBits7to5(deadtime_ns,1/clk_int);
+
+	TEST_ASSERT_EQUAL(0,result);
+
+}
+
+void test_getdtgBits7to5_deadtime_is_15875ns_expect_return_0(void){
+	int clk_int = HAL_RCC_GetHCLKFreq;
+	int deadtime_ns = 15875;
+	uint8_t result = getdtgBits7to5(deadtime_ns,1/clk_int);
+
+	TEST_ASSERT_EQUAL(0,result);
+
+}
+
+void test_getdtgBits7to5_deadtime_is_15876ns_expect_return_0x80(void){
+	int clk_int = HAL_RCC_GetHCLKFreq;
+	int deadtime_ns = 15900;
+	uint8_t result = getdtgBits7to5(deadtime_ns,1/clk_int);
+
+	TEST_ASSERT_EQUAL(0x80,result);
+
+}

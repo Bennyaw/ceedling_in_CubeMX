@@ -1,0 +1,19 @@
+#include "unity.h"
+#include "timer.h"
+
+#define HAL_RCC_GetHCLKFreq 8000000;
+
+void setUp(void)
+{
+}
+
+void tearDown(void)
+{
+}
+
+void test_timer_setDeadTime(void)
+{
+    int i = clockFreq();
+
+    TEST_ASSERT_EQUAL(HAL_RCC_GetHCLKFreq,i);
+}

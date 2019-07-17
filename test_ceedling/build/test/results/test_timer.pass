@@ -1,0 +1,86 @@
+---
+:source:
+  :path: test
+  :file: test_timer.c
+:successes:
+- :test: test_timer_clk_int_Freq_freq_8MHz_expect_125_ns
+  :line: 14
+  :message: ''
+- :test: test_getdtgMultiplier_deadtime_is_3000ns_expect_return_0
+  :line: 22
+  :message: ''
+- :test: test_getdtgMultiplier_deadtime_is_15875ns_expect_return_0
+  :line: 31
+  :message: ''
+- :test: test_getdtgMultiplier_deadtime_is_15876ns_expect_return_0x0
+  :line: 40
+  :message: ''
+- :test: test_getdtgMultiplier_deadtime_is_16000ns_expect_return_0x80
+  :line: 49
+  :message: ''
+- :test: test_getdtgMultiplier_deadtime_is_18452ns_expect_return_0x80
+  :line: 58
+  :message: ''
+- :test: test_getdtgMultiplier_deadtime_is_31825ns_expect_return_0x80
+  :line: 68
+  :message: ''
+- :test: test_getdtgMultiplier_deadtime_is_32000ns_expect_return_0xC0
+  :line: 77
+  :message: ''
+- :test: test_getdtgMultiplier_deadtime_is_58000ns_expect_return_0xC0
+  :line: 86
+  :message: ''
+- :test: test_getdtgMultiplier_deadtime_is_63999ns_expect_return_0xC0
+  :line: 95
+  :message: ''
+- :test: test_getdtgMultiplier_deadtime_is_64000ns_expect_return_0xE0
+  :line: 104
+  :message: ''
+- :test: test_getdtgMultiplier_deadtime_is_100000ns_expect_return_0xE0
+  :line: 113
+  :message: ''
+- :test: test_getdtgMultiplier_deadtime_is_126999ns_expect_return_0xE0
+  :line: 122
+  :message: ''
+- :test: test_getdtgMultiplier_deadtime_is_127000ns_expect_return_0xE0
+  :line: 131
+  :message: ''
+- :test: test_getdtgMultiplier_deadtime_is_300000ns_expect_return_0xE0
+  :line: 140
+  :message: ''
+- :test: test_getdtgBitsVal_deadtime_is_14386ns_range1_expect_return_0x73
+  :line: 149
+  :message: ''
+- :test: test_getdtgBitsVal_deadtime_is_15900ns_range1_expect_return_0x7F
+  :line: 158
+  :message: ''
+- :test: test_getdtgBitsVal_deadtime_is_18020ns_range2_expect_return_0x8
+  :line: 167
+  :message: ''
+- :test: test_getdtgBitsVal_deadtime_is_31800ns_range2_expect_return_0x3F
+  :line: 176
+  :message: ''
+- :test: test_getdtgBitsVal_deadtime_is_50786ns_range3_expect_return_0x12
+  :line: 185
+  :message: ''
+- :test: test_getdtgBitsVal_deadtime_is_63346ns_range3_expect_return_0x1F
+  :line: 194
+  :message: ''
+- :test: test_getdtgBitsVal_deadtime_is_103546ns_range4_expect_return_0x13
+  :line: 203
+  :message: ''
+- :test: test_getdtgBitsVal_deadtime_is_126800ns_range4_expect_return_0x1F
+  :line: 212
+  :message: ''
+- :test: test_setDeadTime_deadtime_is_3000ns_range1_expect_return_0x18
+  :line: 221
+  :message: ''
+:failures: []
+:ignores: []
+:counts:
+  :total: 24
+  :passed: 24
+  :failed: 0
+  :ignored: 0
+:stdout: []
+:time: 0.5252877549937693

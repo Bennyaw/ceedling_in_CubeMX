@@ -1,0 +1,23 @@
+03:12:14 **** Incremental Build of configuration Debug for project test_ceedling ****
+make all 
+Building file: ../src/timer.c
+Invoking: MCU GCC Compiler
+C:\Bennyaw\STM32\test_ceedling\test_ceedling\Debug
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft '-D__weak=__attribute__((weak))' '-D__packed=__attribute__((__packed__))' -DUSE_HAL_DRIVER -DSTM32F103xB -I"C:/Bennyaw/STM32/test_ceedling/test_ceedling/Core/Inc" -I"C:/Bennyaw/STM32/test_ceedling/test_ceedling/src" -I"C:/Bennyaw/STM32/test_ceedling/test_ceedling/Drivers/STM32F1xx_HAL_Driver/Inc" -I"C:/Bennyaw/STM32/test_ceedling/test_ceedling/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy" -I"C:/Bennyaw/STM32/test_ceedling/test_ceedling/Drivers/CMSIS/Device/ST/STM32F1xx/Include" -I"C:/Bennyaw/STM32/test_ceedling/test_ceedling/Drivers/CMSIS/Include"  -Og -g3 -Wall -fmessage-length=0 -ffunction-sections -c -fmessage-length=0 -MMD -MP -MF"src/timer.d" -MT"src/timer.o" -o "src/timer.o" "../src/timer.c"
+Finished building: ../src/timer.c
+ 
+Building target: test_ceedling.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -mfloat-abi=soft -specs=nosys.specs -specs=nano.specs -T"../STM32F103C8Tx_FLASH.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "test_ceedling.elf" @"objects.list"   -lm
+Finished building target: test_ceedling.elf
+ 
+make --no-print-directory post-build
+Generating hex and Printing size information:
+arm-none-eabi-objcopy -O ihex "test_ceedling.elf" "test_ceedling.hex"
+arm-none-eabi-size "test_ceedling.elf"
+   text	   data	    bss	    dec	    hex	filename
+    648	     16	   1568	   2232	    8b8	test_ceedling.elf
+ 
+
+03:12:16 Build Finished (took 2s.222ms)
+

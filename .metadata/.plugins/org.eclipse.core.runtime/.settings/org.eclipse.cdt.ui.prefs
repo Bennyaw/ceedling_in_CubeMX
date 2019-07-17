@@ -1,0 +1,31 @@
+asm_directive=0,0,64
+asm_label=0,0,64
+c_default=128,128,128
+c_keyword=255,255,255
+c_string=128,128,128
+c_type=255,255,255
+content_assist_disabled_computers=org.eclipse.cdt.ui.textProposalCategory\u0000org.eclipse.cdt.ui.parserProposalCategory\u0000
+eclipse.preferences.version=1
+hoverModifierMasks=org.eclipse.cdt.ui.BestMatchHover;0;org.eclipse.cdt.debug.internal.ui.editors.DebugTextHover;0;org.eclipse.cdt.ui.ProblemHover;0;org.eclipse.cdt.ui.CDocHover;0;org.eclipse.cdt.ui.CMacroExpansionHover;0;org.eclipse.cdt.ui.CSourceHover;131072;org.eclipse.cdt.ui.AnnotationHover;0;
+hoverModifiers=org.eclipse.cdt.ui.BestMatchHover;0;org.eclipse.cdt.debug.internal.ui.editors.DebugTextHover;\!0;org.eclipse.cdt.ui.ProblemHover;\!0;org.eclipse.cdt.ui.CDocHover;\!0;org.eclipse.cdt.ui.CMacroExpansionHover;\!0;org.eclipse.cdt.ui.CSourceHover;Shift;org.eclipse.cdt.ui.AnnotationHover;\!0;
+org.eclipse.cdt.ui.text.custom_code_templates=<?xml version\="1.0" encoding\="UTF-8" standalone\="no"?><templates/>
+org.eclipse.cdt.ui.text.templates.custom=<?xml version\="1.0" encoding\="UTF-8" standalone\="no"?><templates/>
+semanticHighlighting.class.color=128,128,128
+semanticHighlighting.field.color=255,255,255
+semanticHighlighting.functionDeclaration.color=255,255,255
+semanticHighlighting.localVariable.enabled=true
+semanticHighlighting.localVariableDeclaration.color=255,128,64
+semanticHighlighting.localVariableDeclaration.enabled=true
+semanticHighlighting.method.enabled=true
+semanticHighlighting.methodDeclaration.color=255,255,255
+semanticHighlighting.parameterVariable.color=255,128,0
+semanticHighlighting.parameterVariable.enabled=true
+semanticHighlighting.staticField.color=255,255,255
+semanticHighlighting.staticMethod.color=128,128,0
+semanticHighlighting.templateParameter.color=255,255,255
+semanticHighlighting.typedef.color=255,255,255
+sourceHoverBackgroundColor=45,45,45
+spelling_locale_initialized=true
+spelling_user_dictionary_encoding=
+useAnnotationsPrefPage=true
+useQuickDiffPrefPage=true

@@ -1,0 +1,16 @@
+#ifndef _TIMER_H
+#define _TIMER_H
+
+#define HAL_RCC_GetHCLKFreq 8000000
+
+enum deadTimeMultiplier{
+	periodMultiplier_1 = 1,
+	periodMultiplier_2 = 2,
+	periodMultiplier_8 = 8,
+	periodMultiplier_16 = 16
+};
+
+
+
+int clockFreq(void);
+#endif // _TIMER_H
